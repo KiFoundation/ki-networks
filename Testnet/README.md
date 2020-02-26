@@ -12,8 +12,8 @@ To join the Kichain testnet, you need first to install both `golang` and `ki-too
 
 You will also need a couple of basic tools such as `curl` and `vim` (or whatever tools that can replace them). Go ahead and install them :
 ```
-sudo apt-get install vim
-sudo apt-get install curl
+sudo apt install vim
+sudo apt install curl
 ```
 
 Once done, create a folder to contain your node information:

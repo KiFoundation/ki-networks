@@ -19,20 +19,21 @@ sudo apt install curl
 Once done, create a folder to contain your node information:
 ```
 mkdir -p node-1/kid node-1/kicli node-1/kilogs
+cd node-1
 ```
 
 Initiate the needed configuration files using the `unsafe-reset-all`command:
 ```
-kid unsafe-reset-all --home node-1/kid
+kid unsafe-reset-all --home ./kid
 ```
 
-Copy the genesis file to the `node-1/kid/config/` folder:
+Copy the genesis file to the `./kid/config/` folder:
 ```
-curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/Kichain-t/genesis.json > node-1/kid/config/genesis.json
+curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/Kichain-t/genesis.json > ./kid/config/genesis.json
 
 ```
 
-Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `node-1/kid/config/` directory. Change the default `moniker` to whatever you want (the default name is the machine name). Then provide in in the field `persistent_peers` the address of one of the following persistent peers.
+Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `./kid/config/` directory. Change the default `moniker` to whatever you want (the default name is the machine name). Then provide in in the field `persistent_peers` the address of one of the following persistent peers.
 
 ```
 persistent_peers:
@@ -42,13 +43,13 @@ persistent_peers:
 Now that the node is configured, you can start it.
 
 ```
-kid start --home node-1/kid/ &> kilogs/ki-node.log &
+kid start --home ./kid/ &> ./kilogs/ki-node.log &
 
 ```
 This command will start the block synchronisation process where your node retrieves the current state of the blockchain from the other nodes. The process output is redirected to the `ki-node.log`log file. It can be visualised as follows:
 
 ```
-tail -f ilogs/ki-node.log
+tail -f kilogs/ki-node.log
 ```
 and it looks like this:
 
@@ -73,7 +74,7 @@ I[2020-02-12|08:52:14.579] Committed state            module=state height=6 txs=
 The previous steps will start the node in a relay mode. That is, it is relaying transactions and blocks, but note validating new blocks. To enable the validation process, you need to create and declare your own validator. Start by create your validator wallet by generating a new key pair as follows (Here we call it `wallet-1` but you can call it whatever you want):
 
 ```
-kicli keys add wallet-1 --home node-1/kicli/
+kicli keys add wallet-1 --home ./kicli/
 ```
 
 Enter your password twice and then **<span style="color:red">save </span>** the generated addresses, keys and **<span style="color:red">passphrase</span>**.
@@ -90,11 +91,11 @@ kicli tx staking create-validator \
                   --commission-rate=0.1 \
                   --min-self-delegation=1 \
                   --amount=100000000tki \
-                  --pubkey `kid tendermint show-validator --home node-1/kid/` \
+                  --pubkey `kid tendermint show-validator --home ./kid/` \
                   --moniker=<YOUR VALIDATOR NAME> \
                   --chain-id=KiChain-t \
                   --from=wallet-1 \
-                  --home node-1/kidcli/
+                  --home ./kicli/
 ```
 
 To know more about the various possible configurations of your validator, please refer to the dedicated [documentation](http://). Once this transaction has passed, and if the bonded amount is sufficient to be in the active validator list, your validator will automatically start validating new blocks.

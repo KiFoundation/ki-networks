@@ -10,14 +10,20 @@
 
 To join the Kichain testnet, you need first to install both `golang` and `ki-tools`. You can do it by following the dedicated tutorial that can be found [here](https://github.com/KiFoundation/ki-tools/blob/master/README.md).
 
+You will also need a couple of basic tools such as `curl` and `vim` (or whatever tools that can replace them). Go ahead and install them :
+```
+sudo apt-get install vim
+sudo apt-get install curl
+```
+
 Once done, create a folder to contain your node information:
 ```
-mkdir -p node-1/kid node-1/kicli
+mkdir -p node-1/kid node-1/kicli node-1/kilogs
 ```
 
 Initiate the needed configuration files using the `unsafe-reset-all`command:
 ```
-kid unsafe-reset-all --home node-1/kicli/
+kid unsafe-reset-all --home node-1/kid
 ```
 
 Copy the genesis file to the `node-1/kid/config/` folder:
@@ -26,7 +32,7 @@ curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/Kic
 
 ```
 
-Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `node-1/kid/config/` directory. Change the default `moniker` given in `line 11` to whatever you want (the default name is the machine name). Then provide in `line 163` the address of one of the following persistent peers.
+Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `node-1/kid/config/` directory. Change the default `moniker` to whatever you want (the default name is the machine name). Then provide in in the field `persistent_peers` the address of one of the following persistent peers.
 
 ```
 persistent_peers:
@@ -36,7 +42,7 @@ persistent_peers:
 Now that the node is configured, you can start it.
 
 ```
-kid start --home /node-1/kid/
+kid start --home node-1/kid/ &> kilogs/ki-node.log &
 
 ```
 This command will start the block synchronisation process where your node retrieves the current state of the blockchain from the other nodes. The process looks like this:

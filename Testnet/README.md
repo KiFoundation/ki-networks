@@ -36,7 +36,7 @@ Once done, you need to give a name to your node and indicate the seed server to 
 
 ```
 persistent_peers:
-2908d4b48cb112fc24c2016f142fe6b351ffdffd@94.23.3.107:26656
+2908d4b48cb112fc24c2016f142fe6b351ffdffd@94.23.3.107:36656
 ```
 
 Now that the node is configured, you can start it.

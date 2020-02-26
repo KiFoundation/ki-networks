@@ -30,7 +30,7 @@ Once done, you need to give a name to your node and indicate the seed server to 
 
 ```
 persistent_peers:
-2908d4b48cb112fc24c2016f142fe6b351ffdffd@94.23.3.107:36656
+2908d4b48cb112fc24c2016f142fe6b351ffdffd@94.23.3.107:26656
 ```
 
 Now that the node is configured, you can start it.
@@ -67,7 +67,7 @@ kicli keys add wallet-1 --home node-1/kicli/
 
 Enter your password twice and then **<span style="color:red">save </span>** the generated addresses, keys and **<span style="color:red">passphrase</span>**.
 
-If you have another wallet with testnet tokens (TKI), then feed the newly created wallet with some tokens. Otherwise head to [faucet-testnet.blockchain.ki](faucet-testnet.blockchain.ki) or join our public slack channel [#ki-testnet](), and we will show you some love ...
+If you have another wallet with testnet tokens (TKI), then feed the newly created wallet with some tokens. Otherwise, join our public slack channel [#ki-testnet](https://slack.com/share/IUHJ5QN8G/umeKukLeDdj2cE11ehZGqFat/enQtOTY5NjE3ODM4Mjg4LTZlYWVjZmI4NjgwMzIzZjJjMGY4MzQzNDQ2NDM5NmVjY2U5ZWEzNWJhYzI2MTg4NzJjYTFiNzYwODFkMzYzNGM), ~~or head to [faucet-testnet.blockchain.ki]()~~, and we will show you some love ...
 
 Now that your wallet has a positive balance, you can create your validator
 through a staking transaction:

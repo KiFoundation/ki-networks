@@ -3,7 +3,7 @@
 </p>
 
 # Ki Testnet
-**Current Version :** Kichain-t
+**Current Version :** KiChain-t
 
 ## How to join   
 **Note :** A fresh install of Ubuntu 18.04 is recommended for this deployment.
@@ -45,7 +45,12 @@ Now that the node is configured, you can start it.
 kid start --home node-1/kid/ &> kilogs/ki-node.log &
 
 ```
-This command will start the block synchronisation process where your node retrieves the current state of the blockchain from the other nodes. The process looks like this:
+This command will start the block synchronisation process where your node retrieves the current state of the blockchain from the other nodes. The process output is redirected to the `ki-node.log`log file. It can be visualised as follows:
+
+```
+tail -f ilogs/ki-node.log
+```
+and it looks like this:
 
 ```
 I[2020-02-12|08:52:14.376] Executed block            module=state height=1 validTxs=0 invalidTxs=0
@@ -60,7 +65,7 @@ I[2020-02-12|08:52:14.539] Executed block            module=state height=5 valid
 I[2020-02-12|08:52:14.547] Committed state            module=state height=5 txs=0 appHash=B29267030784C9B9461FBBCF8E539144AD5ADB2CCD32BD81A99C8EDD015A096F
 I[2020-02-12|08:52:14.572] Executed block            module=state height=6 validTxs=0 invalidTxs=0
 I[2020-02-12|08:52:14.579] Committed state            module=state height=6 txs=0 appHash=5BD981B1A3D238BDD03BD2396C56AF64F7807DC6736A2F217E2D231EBA63B816
-
+...
 ```  
 
 **Note :** You will need to wait for the end of the synchronisation process before proceeding to the validator creation.
@@ -81,15 +86,15 @@ through a staking transaction:
 ```
 kicli tx staking create-validator \
                   --commission-max-change-rate=0.1 \
-                  --commission-max-rate=0.1
-                  --commission-rate=0.1
-                  --min-self-delegation=1
-                  --amount=100000000tki
-                  --pubkey `kid tendermint show-validator --home node-1/kid/`
-                  --moniker=node-1
-                  --chain-id=kichain
-                  --from=wallet-1
-                  --home node-1/kid/
+                  --commission-max-rate=0.1 \
+                  --commission-rate=0.1 \
+                  --min-self-delegation=1 \
+                  --amount=100000000tki \
+                  --pubkey `kid tendermint show-validator --home node-1/kid/` \
+                  --moniker=<YOUR VALIDATOR NAME> \
+                  --chain-id=KiChain-t \
+                  --from=wallet-1 \
+                  --home node-1/kidcli/
 ```
 
 To know more about the various possible configurations of your validator, please refer to the dedicated [documentation](http://). Once this transaction has passed, and if the bonded amount is sufficient to be in the active validator list, your validator will automatically start validating new blocks.

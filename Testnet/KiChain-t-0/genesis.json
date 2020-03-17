@@ -1,0 +1,481 @@
+{
+  "genesis_time": "2020-03-12T10:17:05.995417541Z",
+  "chain_id": "KiChain-t-0",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "tki"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "tki",
+        "amount": "1000"
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "accounts": [
+      {
+        "address": "tki19k3k7vx3df8zjxxcefghhl79urjjxpgqd0sklx",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "200000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1d3wjcenu600mal7x2v96uwzzjc7q2qu6lmlzwq",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "200000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1857lr2tn33q9usmlka0n5wppnxqnuyw0muavx3",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "199999999000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki10a4ucqj8hfq0teyp8hzn6emu8jl6eelt8chkqs",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "1000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "50000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "50000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1584090000",
+        "end_time": "1678665600",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki17a9efcc7dn330kc0wd27aqhtrgjh0n07vt9693",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "50000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "50000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1584090000",
+        "end_time": "1615593600",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1e3cn8845egd8ql2cps08ecac8er7q6ezjmr2xq",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1584090000",
+        "end_time": "1592006400",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki126fwpzg6mvnalmxn2p55fwd6kfyc7sl8adys9d",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1584090000",
+        "end_time": "1592006400",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki12swutcrd520tz3hpucc3ry2m3l9khk29rx2ze2",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1584090000",
+        "end_time": "1592006400",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1xg657sx02hel9j24fnllaaw5r5tvg4x9ujclx2",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "20000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "20000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1599987600",
+        "end_time": "1607817600",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki147s27ty6nmpskvcgv4gcrdv7zg5d7x37gyva8x",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "20000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "20000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1607850000",
+        "end_time": "1615593600",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1ez4pcfcv6pjq4tjjxfvpz4wgezm0frvx0hy9ll",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "20000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "20000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1615626000",
+        "end_time": "1623542400",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "tki1kkkjeq2x72vf68wsuqfdz7d9haq9csjr7c9w8p",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1592038800",
+        "end_time": "1599955200",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      }
+    ],
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "supply": {
+      "supply": []
+    },
+    "params": null,
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "tki",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "tki",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "genesis-1",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "tki10a4ucqj8hfq0teyp8hzn6emu8jl6eelt8chkqs",
+                  "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln",
+                  "pubkey": "tkivalconspub1zcjduepqyv3axq76l4d69fgyt6ek9z9sad075hq9ye4d4s96ld6jjzltr2gsrnn5j4",
+                  "value": {
+                    "denom": "tki",
+                    "amount": "1000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Aq3YTJ2Kv/zaGmEumPWuNZ4IZEH8wl2T3FvQGHA3j6gH"
+                },
+                "signature": "9vETRMK7oV9gJCtbk3hwf58GFsAwujuWGnRvzvDwWTQaftVIUCMgsGiQJTiXaHO5y6yX+t7ggADXIucvuINFrg=="
+              }
+            ],
+            "memo": "58bda4854b4264cc1ae0f52d89922d6ba4725791@94.23.3.107:26656"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -3,7 +3,7 @@
 </p>
 
 # Ki Testnet
-**Current Version :** KiChain-t
+**Current Version :** KiChain-t-0
 
 ## How to join   
 **Note :** A fresh install of Ubuntu 18.04 is recommended for this deployment.
@@ -18,8 +18,9 @@ sudo apt install curl
 
 Once done, create a folder to contain your node information:
 ```
-mkdir -p node-1/kid node-1/kicli node-1/kilogs
-cd node-1
+export NODE_ROOT= <location of your choice>
+mkdir -p $NODE_ROOT/kid $NODE_ROOT/kicli $NODE_ROOT/kilogs
+cd $NODE_ROOT
 ```
 
 Initiate the needed configuration files using the `unsafe-reset-all`command:
@@ -29,7 +30,7 @@ kid unsafe-reset-all --home ./kid
 
 Copy the genesis file to the `./kid/config/` folder:
 ```
-curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/Kichain-t/genesis.json > ./kid/config/genesis.json
+curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/KiChain-t-0/genesis.json > ./kid/config/genesis.json
 
 ```
 
@@ -93,7 +94,7 @@ kicli tx staking create-validator \
                   --amount=100000000tki \
                   --pubkey `kid tendermint show-validator --home ./kid/` \
                   --moniker=<YOUR VALIDATOR NAME> \
-                  --chain-id=KiChain-t \
+                  --chain-id=KiChain-t-0 \
                   --from=wallet-1 \
                   --home ./kicli/
 ```

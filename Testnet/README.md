@@ -79,7 +79,7 @@ kicli keys add wallet-1 --home ./kicli/
 
 Enter your password twice and then **<span style="color:red">save </span>** the generated addresses, keys and **<span style="color:red">passphrase</span>**.
 
-If you have another wallet with testnet tokens (TKI), then feed the newly created wallet with some tokens. Otherwise, join our public slack channel [#ki-testnet](https://kiecosystem.slack.com/archives/CV9FQERL2), and we will show you some love ...
+If you have another wallet with testnet tokens (TKI), then feed the newly created wallet with some tokens. Otherwise, join our public slack channel [#faucet](https://kiecosystem.slack.com/archives/CV9FQERL2), and we will show you some love ...
 
 Now that your wallet has a positive balance, you can create your validator
 through a staking transaction:

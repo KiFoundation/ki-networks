@@ -20,7 +20,8 @@
   "app_state": {
     "staking": {
       "params": {
-        "unbonding_time": "1814400000000000",
+        "unbonding_time":
+        "1814400000000000",
         "max_validators": 100,
         "max_entries": 7,
         "bond_denom": "tki"
@@ -147,8 +148,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1584090000",
-        "end_time": "1678665600",
+        "start_time": "1584540000",
+        "end_time": "1679148000",
         "module_name": "",
         "module_permissions": [
           ""
@@ -172,8 +173,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1584090000",
-        "end_time": "1615593600",
+        "start_time": "1584540000",
+        "end_time": "1616076000",
         "module_name": "",
         "module_permissions": [
           ""
@@ -197,8 +198,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1584090000",
-        "end_time": "1592006400",
+        "start_time": "1584540000",
+        "end_time": "1592488800",
         "module_name": "",
         "module_permissions": [
           ""
@@ -222,8 +223,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1584090000",
-        "end_time": "1592006400",
+        "start_time": "1584540000",
+        "end_time": "1592488800",
         "module_name": "",
         "module_permissions": [
           ""
@@ -247,8 +248,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1584090000",
-        "end_time": "1592006400",
+        "start_time": "1592488800",
+        "end_time": "1600437600",
         "module_name": "",
         "module_permissions": [
           ""
@@ -272,8 +273,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1599987600",
-        "end_time": "1607817600",
+        "start_time": "1600437600",
+        "end_time": "1608300000",
         "module_name": "",
         "module_permissions": [
           ""
@@ -297,8 +298,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1607850000",
-        "end_time": "1615593600",
+        "start_time": "1608300000",
+        "end_time": "1616076000",
         "module_name": "",
         "module_permissions": [
           ""
@@ -322,8 +323,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1615626000",
-        "end_time": "1623542400",
+        "start_time": "1616076000",
+        "end_time": "1624024800",
         "module_name": "",
         "module_permissions": [
           ""
@@ -347,8 +348,8 @@
         ],
         "delegated_free": [],
         "delegated_vesting": [],
-        "start_time": "1592038800",
-        "end_time": "1599955200",
+        "start_time": "1592488800",
+        "end_time": "1600437600",
         "module_name": "",
         "module_permissions": [
           ""
@@ -362,7 +363,7 @@
         "min_signed_per_window": "0.500000000000000000",
         "downtime_jail_duration": "600000000000",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
+        "slash_fraction_downtime": "0.001000000000000000"
       },
       "signing_infos": {},
       "missed_blocks": {}
@@ -378,8 +379,8 @@
       "fee_pool": {
         "community_pool": []
       },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
+      "community_tax": "0.040000000000000000",
+      "base_proposer_reward": "0.920000000000000000",
       "bonus_proposer_reward": "0.040000000000000000",
       "withdraw_addr_enabled": true,
       "delegator_withdraw_infos": [],
@@ -393,14 +394,14 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.130000000000000000",
+        "inflation": "0.040000000000000000",
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
         "mint_denom": "tki",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
+        "inflation_rate_change": "0.040000000000000000",
+        "inflation_max": "0.060000000000000000",
+        "inflation_min": "0.020000000000000000",
         "goal_bonded": "0.670000000000000000",
         "blocks_per_year": "6311520"
       }

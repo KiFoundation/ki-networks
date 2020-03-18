@@ -2,8 +2,8 @@
     <img width=150px src="https://wallet-testnet.blockchain.ki/static/img/icons/ki-chain.png" />
 </p>
 
-# Ki Testnet
-**Current Version :** KiChain-t-0
+# Ki Devnet
+**Current Version :** KiChain-t
 
 ## How to join   
 **Note :** A fresh install of Ubuntu 18.04 is recommended for this deployment.
@@ -30,14 +30,14 @@ kid unsafe-reset-all --home ./kid
 
 Copy the genesis file to the `./kid/config/` folder:
 ```
-curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/KiChain-t-0/genesis.json > ./kid/config/genesis.json
+curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/Kichain-t/genesis.json > ./kid/config/genesis.json > ./kid/config/genesis.json
 
 ```
 
 Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `./kid/config/` directory. Change the default `moniker` to whatever you want (the default name is the machine name). Then provide in in the field `persistent_peers` the address of one of the following persistent peers.
 
 ```
-persistent_peers="58bda4854b4264cc1ae0f52d89922d6ba4725791@94.23.3.107:26656"
+persistent_peers="2908d4b48cb112fc24c2016f142fe6b351ffdffd@94.23.3.107:36656"
 ```
 
 Now that the node is configured, you can start it.
@@ -94,7 +94,7 @@ kicli tx staking create-validator \
                   --amount=100000000tki \
                   --pubkey `kid tendermint show-validator --home ./kid/` \
                   --moniker=<YOUR VALIDATOR NAME> \
-                  --chain-id=KiChain-t-0 \
+                  --chain-id=KiChain-t \
                   --from=wallet-1 \
                   --home ./kicli/
 ```

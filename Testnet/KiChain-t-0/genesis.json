@@ -20,8 +20,7 @@
   "app_state": {
     "staking": {
       "params": {
-        "unbonding_time":
-        "1814400000000000",
+        "unbonding_time":"1814400000000000",
         "max_validators": 100,
         "max_entries": 7,
         "bond_denom": "tki"
@@ -231,6 +230,31 @@
         ]
       },
       {
+        "address": "tki1kkkjeq2x72vf68wsuqfdz7d9haq9csjr7c9w8p",
+        "coins": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [
+          {
+            "denom": "tki",
+            "amount": "10000000000000"
+          }
+        ],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "1592488800",
+        "end_time": "1600437600",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
         "address": "tki12swutcrd520tz3hpucc3ry2m3l9khk29rx2ze2",
         "coins": [
           {
@@ -329,31 +353,6 @@
         "module_permissions": [
           ""
         ]
-      },
-      {
-        "address": "tki1kkkjeq2x72vf68wsuqfdz7d9haq9csjr7c9w8p",
-        "coins": [
-          {
-            "denom": "tki",
-            "amount": "10000000000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [
-          {
-            "denom": "tki",
-            "amount": "10000000000000"
-          }
-        ],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "1592488800",
-        "end_time": "1600437600",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
       }
     ],
     "slashing": {
@@ -363,7 +362,7 @@
         "min_signed_per_window": "0.500000000000000000",
         "downtime_jail_duration": "600000000000",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.001000000000000000"
+        "slash_fraction_downtime": "0.000100000000000000"
       },
       "signing_infos": {},
       "missed_blocks": {}

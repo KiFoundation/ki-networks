@@ -86,8 +86,7 @@ through a staking transaction:
 
 ```
 kicli tx staking create-validator \
-                  --
-                  =0.1 \
+                  --commission-max-change-rate=0.1 \
                   --commission-max-rate=0.1 \
                   --commission-rate=0.1 \
                   --min-self-delegation=1 \

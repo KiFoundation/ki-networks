@@ -1,0 +1,1172 @@
+{
+  "app_hash": "",
+  "app_state": {
+    "accounts": [{
+      "account_number": "24",
+      "address": "tki1ph4xj65lwvlpnc53a0y9t6krr0827m6s4etcsm",
+      "coins": [{
+        "amount": "516490000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "26",
+      "address": "tki1r6nh7g6npn6phgauvnafyqtq4m7sqznuwa27uv",
+      "coins": [{
+        "amount": "10302787748",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "1",
+      "start_time": "0"
+    }, {
+      "account_number": "27",
+      "address": "tki1yqcvj895pae7q2e52huf789z20lravg6xzf3mg",
+      "coins": [{
+        "amount": "366218965341",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "38",
+      "start_time": "0"
+    }, {
+      "account_number": "0",
+      "address": "tki19k3k7vx3df8zjxxcefghhl79urjjxpgqd0sklx",
+      "coins": [{
+        "amount": "200000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "19",
+      "address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+      "coins": [{
+        "amount": "6114190329860",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "8",
+      "start_time": "0"
+    }, {
+      "account_number": "10",
+      "address": "tki1xg657sx02hel9j24fnllaaw5r5tvg4x9ujclx2",
+      "coins": [{
+        "amount": "20000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1608300000",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "20000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1600437600"
+    }, {
+      "account_number": "2",
+      "address": "tki1857lr2tn33q9usmlka0n5wppnxqnuyw0muavx3",
+      "coins": [{
+        "amount": "159998998961250",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "6",
+      "start_time": "0"
+    }, {
+      "account_number": "4",
+      "address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+      "coins": [{
+        "amount": "39150881385907",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [{
+        "amount": "11000000000000",
+        "denom": "tki"
+      }],
+      "end_time": "1679148000",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "50000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "3",
+      "start_time": "1584540000"
+    }, {
+      "account_number": "14",
+      "address": "tki1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3mxjfs4",
+      "coins": [{
+        "amount": "43751188514100",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "bonded_tokens_pool",
+      "module_permissions": ["burner", "staking"],
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "9",
+      "address": "tki12swutcrd520tz3hpucc3ry2m3l9khk29rx2ze2",
+      "coins": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1600437600",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1592488800"
+    }, {
+      "account_number": "7",
+      "address": "tki126fwpzg6mvnalmxn2p55fwd6kfyc7sl8adys9d",
+      "coins": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1592488800",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1584540000"
+    }, {
+      "account_number": "15",
+      "address": "tki1tygms3xhhs3yv487phx3dw4a95jn7t7l0xwcxp",
+      "coins": [],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "not_bonded_tokens_pool",
+      "module_permissions": ["burner", "staking"],
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "1",
+      "address": "tki1d3wjcenu600mal7x2v96uwzzjc7q2qu6lmlzwq",
+      "coins": [{
+        "amount": "200000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "16",
+      "address": "tki10d07y265gmmuvt4z0w9aw880jnsr700j5lgrl3",
+      "coins": [],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "gov",
+      "module_permissions": ["burner"],
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "3",
+      "address": "tki10a4ucqj8hfq0teyp8hzn6emu8jl6eelt8chkqs",
+      "coins": [{
+        "amount": "24536871672",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "1",
+      "start_time": "0"
+    }, {
+      "account_number": "20",
+      "address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+      "coins": [{
+        "amount": "1046757822494",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "4",
+      "start_time": "0"
+    }, {
+      "account_number": "13",
+      "address": "tki1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8fzl6qa",
+      "coins": [{
+        "amount": "25663334641",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "distribution",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "22",
+      "address": "tki15hcsu6y25xte58yy7ya554z5gnpdvjpq5cgv22",
+      "coins": [{
+        "amount": "2500",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "1",
+      "start_time": "0"
+    }, {
+      "account_number": "11",
+      "address": "tki147s27ty6nmpskvcgv4gcrdv7zg5d7x37gyva8x",
+      "coins": [{
+        "amount": "20000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1616076000",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "20000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1608300000"
+    }, {
+      "account_number": "8",
+      "address": "tki1kkkjeq2x72vf68wsuqfdz7d9haq9csjr7c9w8p",
+      "coins": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1600437600",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1592488800"
+    }, {
+      "account_number": "25",
+      "address": "tki1cq79shzkvxfv9amcgpcvt8ase7fgej52grff4g",
+      "coins": [{
+        "amount": "999000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "28",
+      "address": "tki1cj9cdx9mg95lhvpquym08ncgzpjvhmnwjjw832",
+      "coins": [{
+        "amount": "7487739006",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "3",
+      "start_time": "0"
+    }, {
+      "account_number": "12",
+      "address": "tki1ez4pcfcv6pjq4tjjxfvpz4wgezm0frvx0hy9ll",
+      "coins": [{
+        "amount": "20000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1624024800",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "20000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1616076000"
+    }, {
+      "account_number": "6",
+      "address": "tki1e3cn8845egd8ql2cps08ecac8er7q6ezjmr2xq",
+      "coins": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1592488800",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "10000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1584540000"
+    }, {
+      "account_number": "17",
+      "address": "tki1m3h30wlvsf8llruxtpukdvsy0km2kum8xvu7wz",
+      "coins": [],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "mint",
+      "module_permissions": ["minter"],
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "21",
+      "address": "tki1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89gdu4k7",
+      "coins": [{
+        "amount": "141668397192",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "2",
+      "start_time": "0"
+    }, {
+      "account_number": "18",
+      "address": "tki17xpfvakm2amg962yls6f84z3kell8c5l7ycxzl",
+      "coins": [],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "fee_collector",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "0",
+      "start_time": "0"
+    }, {
+      "account_number": "5",
+      "address": "tki17a9efcc7dn330kc0wd27aqhtrgjh0n07vt9693",
+      "coins": [{
+        "amount": "50000000000000",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "1616076000",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [{
+        "amount": "50000000000000",
+        "denom": "tki"
+      }],
+      "sequence_number": "0",
+      "start_time": "1584540000"
+    }, {
+      "account_number": "23",
+      "address": "tki1lrvr69kxwhtdcfm8gdhu8aywde83qmd6jf53yx",
+      "coins": [{
+        "amount": "982500",
+        "denom": "tki"
+      }],
+      "delegated_free": [],
+      "delegated_vesting": [],
+      "end_time": "0",
+      "module_name": "",
+      "module_permissions": null,
+      "original_vesting": [],
+      "sequence_number": "1",
+      "start_time": "0"
+    }],
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "crisis": {
+      "constant_fee": {
+        "amount": "1000",
+        "denom": "tki"
+      }
+    },
+    "distribution": {
+      "base_proposer_reward": "0.920000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "community_tax": "0.040000000000000000",
+      "delegator_starting_infos": [{
+        "delegator_address": "tki1r6nh7g6npn6phgauvnafyqtq4m7sqznuwa27uv",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "1",
+          "stake": "100000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "2",
+          "stake": "5000000000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "delegator_address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "3",
+          "stake": "2000000000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "1",
+          "stake": "4000000000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "2",
+          "stake": "10990000000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki10a4ucqj8hfq0teyp8hzn6emu8jl6eelt8chkqs",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "3",
+          "stake": "1000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki1yqcvj895pae7q2e52huf789z20lravg6xzf3mg",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "1",
+          "stake": "9750776665199.999999999999999999"
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "delegator_address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "2",
+          "stake": "1999800000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "delegator_address": "tki1cj9cdx9mg95lhvpquym08ncgzpjvhmnwjjw832",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "3",
+          "stake": "68993100.000000000000000000"
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "delegator_address": "tki1yqcvj895pae7q2e52huf789z20lravg6xzf3mg",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "1",
+          "stake": "1399860000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "2",
+          "stake": "4999500000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "3",
+          "stake": "9999999999.999999999999999999"
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "4",
+          "stake": "4999500000000.000000000000000000"
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89gdu4k7",
+        "starting_info": {
+          "creation_height": "0",
+          "previous_period": "5",
+          "stake": "41995800.000000000000000000"
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }],
+      "delegator_withdraw_infos": [],
+      "fee_pool": {
+        "community_pool": [{
+          "amount": "25663334641.000000000000000000",
+          "denom": "tki"
+        }]
+      },
+      "outstanding_rewards": [{
+        "outstanding_rewards": null,
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "outstanding_rewards": null,
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "outstanding_rewards": null,
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "outstanding_rewards": null,
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }],
+      "previous_proposer": "tkivalcons19sqw9lsz2qjxfkrul6vcjcuvzdjss2njej7n56",
+      "validator_accumulated_commissions": [{
+        "accumulated": null,
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "accumulated": null,
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "accumulated": null,
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "accumulated": null,
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }],
+      "validator_current_rewards": [{
+        "rewards": {
+          "period": "4",
+          "rewards": null
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "rewards": {
+          "period": "4",
+          "rewards": null
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "rewards": {
+          "period": "4",
+          "rewards": null
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "rewards": {
+          "period": "6",
+          "rewards": null
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }],
+      "validator_historical_rewards": [{
+        "period": "1",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "period": "2",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "period": "3",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 2
+        },
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "period": "1",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "period": "2",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "period": "3",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 2
+        },
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "period": "1",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "period": "2",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "period": "3",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 2
+        },
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "period": "1",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "period": "2",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "period": "3",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "period": "4",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 1
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "period": "5",
+        "rewards": {
+          "cumulative_reward_ratio": null,
+          "reference_count": 2
+        },
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }],
+      "validator_slash_events": [],
+      "withdraw_addr_enabled": true
+    },
+    "genutil": null,
+    "gov": {
+      "deposit_params": {
+        "max_deposit_period": "172800000000000",
+        "min_deposit": [{
+          "amount": "10000000",
+          "denom": "tki"
+        }]
+      },
+      "deposits": null,
+      "proposals": [],
+      "starting_proposal_id": "1",
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      },
+      "votes": null,
+      "voting_params": {
+        "voting_period": "172800000000000"
+      }
+    },
+    "mint": {
+      "minter": {
+        "annual_provisions": "32612871704832.803711844784400976",
+        "inflation": "0.080000000000000000"
+      },
+      "params": {
+        "blocks_per_year": "6311520",
+        "goal_bonded": "0.670000000000000000",
+        "inflation_max": "0.140000000000000000",
+        "inflation_min": "0.020000000000000000",
+        "inflation_rate_change": "0.120000000000000000",
+        "mint_denom": "tki"
+      }
+    },
+    "slashing": {
+      "missed_blocks": {
+        "tkivalcons139jaxm8kvdthjrdvx7hxpjc56pd67z4mgrlyk4": [{
+          "index": "0",
+          "missed": false
+        }, {
+          "index": "1",
+          "missed": false
+        }],
+        "tkivalcons19sqw9lsz2qjxfkrul6vcjcuvzdjss2njej7n56": [{
+          "index": "0",
+          "missed": false
+        }, {
+          "index": "1",
+          "missed": false
+        }, {
+          "index": "94",
+          "missed": false
+        }],
+        "tkivalcons1j2klak4kvpzdtkkws74j8wwyh77r9cjw30s34j": [{
+          "index": "46",
+          "missed": false
+        }, {
+          "index": "47",
+          "missed": false
+        }, {
+          "index": "48",
+          "missed": false
+        }, {
+          "index": "49",
+          "missed": false
+        }, {
+          "index": "50",
+          "missed": false
+        }, {
+          "index": "51",
+          "missed": false
+        }, {
+          "index": "52",
+          "missed": false
+        }, {
+          "index": "53",
+          "missed": false
+        }, {
+          "index": "54",
+          "missed": false
+        }, {
+          "index": "55",
+          "missed": false
+        }, {
+          "index": "56",
+          "missed": false
+        }, {
+          "index": "57",
+          "missed": false
+        }, {
+          "index": "58",
+          "missed": false
+        }, {
+          "index": "59",
+          "missed": false
+        }, {
+          "index": "60",
+          "missed": false
+        }, {
+          "index": "61",
+          "missed": false
+        }, {
+          "index": "62",
+          "missed": false
+        }, {
+          "index": "63",
+          "missed": false
+        }, {
+          "index": "64",
+          "missed": false
+        }, {
+          "index": "65",
+          "missed": false
+        }, {
+          "index": "66",
+          "missed": false
+        }],
+        "tkivalcons1rj436mupwjkczenk4376ek6w9x0jjn0dgs0je3": []
+      },
+      "params": {
+        "downtime_jail_duration": "600000000000",
+        "max_evidence_age": "120000000000",
+        "min_signed_per_window": "0.500000000000000000",
+        "signed_blocks_window": "100",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
+      },
+      "signing_infos": {
+        "tkivalcons139jaxm8kvdthjrdvx7hxpjc56pd67z4mgrlyk4": {
+          "address": "tkivalcons139jaxm8kvdthjrdvx7hxpjc56pd67z4mgrlyk4",
+          "index_offset": "50633",
+          "jailed_until": "2020-03-22T21:44:24.588407388Z",
+          "missed_blocks_counter": "0",
+          "start_height": "0",
+          "tombstoned": false
+        },
+        "tkivalcons19sqw9lsz2qjxfkrul6vcjcuvzdjss2njej7n56": {
+          "address": "tkivalcons19sqw9lsz2qjxfkrul6vcjcuvzdjss2njej7n56",
+          "index_offset": "64640",
+          "jailed_until": "2020-03-21T21:43:08.280372075Z",
+          "missed_blocks_counter": "0",
+          "start_height": "0",
+          "tombstoned": false
+        },
+        "tkivalcons1j2klak4kvpzdtkkws74j8wwyh77r9cjw30s34j": {
+          "address": "tkivalcons1j2klak4kvpzdtkkws74j8wwyh77r9cjw30s34j",
+          "index_offset": "123464",
+          "jailed_until": "1970-01-01T00:00:00Z",
+          "missed_blocks_counter": "0",
+          "start_height": "0",
+          "tombstoned": false
+        },
+        "tkivalcons1rj436mupwjkczenk4376ek6w9x0jjn0dgs0je3": {
+          "address": "tkivalcons1rj436mupwjkczenk4376ek6w9x0jjn0dgs0je3",
+          "index_offset": "125339",
+          "jailed_until": "1970-01-01T00:00:00Z",
+          "missed_blocks_counter": "0",
+          "start_height": "0",
+          "tombstoned": false
+        }
+      }
+    },
+    "staking": {
+      "delegations": [{
+        "delegator_address": "tki1r6nh7g6npn6phgauvnafyqtq4m7sqznuwa27uv",
+        "shares": "100000000.000000000000000000",
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "delegator_address": "tki1yqcvj895pae7q2e52huf789z20lravg6xzf3mg",
+        "shares": "9751751840384.038403840384038402",
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "delegator_address": "tki1yqcvj895pae7q2e52huf789z20lravg6xzf3mg",
+        "shares": "1400000000.000000000000000000",
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "shares": "5000000000000.000000000000000000",
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "shares": "4000000000000.000000000000000000",
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "shares": "5000000000000.000000000000000000",
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+        "shares": "10990000000000.000000000000000000",
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+        "shares": "10001000100.010001000100010001",
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki10a4ucqj8hfq0teyp8hzn6emu8jl6eelt8chkqs",
+        "shares": "1000000.000000000000000000",
+        "validator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+        "shares": "2000000000000.000000000000000000",
+        "validator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0"
+      }, {
+        "delegator_address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+        "shares": "2000000000000.000000000000000000",
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "delegator_address": "tki1jtajdczwjecjtqwnvd4pd7recs4esjhzps6rdx",
+        "shares": "5000000000000.000000000000000000",
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }, {
+        "delegator_address": "tki1cj9cdx9mg95lhvpquym08ncgzpjvhmnwjjw832",
+        "shares": "69000000.000000000000000000",
+        "validator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf"
+      }, {
+        "delegator_address": "tki1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89gdu4k7",
+        "shares": "42000000.000000000000000000",
+        "validator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa"
+      }],
+      "exported": true,
+      "last_total_power": "43751187",
+      "last_validator_powers": [{
+        "Address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0",
+        "Power": "7000100"
+      }, {
+        "Address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln",
+        "Power": "14990001"
+      }, {
+        "Address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf",
+        "Power": "11750645"
+      }, {
+        "Address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa",
+        "Power": "10010441"
+      }],
+      "params": {
+        "bond_denom": "tki",
+        "max_entries": 7,
+        "max_validators": 100,
+        "unbonding_time": "1814400000000000"
+      },
+      "redelegations": [{
+        "delegator_address": "tki19mxgs8cwmjaapn2r75m8y626c7h6fr8fhaeeaj",
+        "entries": [{
+          "completion_time": "2020-04-08T15:08:29.654218205Z",
+          "creation_height": "0",
+          "initial_balance": "5000000000000",
+          "shares_dst": "5000000000000.000000000000000000"
+        }],
+        "validator_dst_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa",
+        "validator_src_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }, {
+        "delegator_address": "tki1gg6vzdz33matqfxswt3yp089tz8ut0mzsz22vw",
+        "entries": [{
+          "completion_time": "2020-04-14T11:01:26.8032742Z",
+          "creation_height": "0",
+          "initial_balance": "10000000000",
+          "shares_dst": "10001000100.010001000100010001"
+        }],
+        "validator_dst_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa",
+        "validator_src_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln"
+      }],
+      "unbonding_delegations": null,
+      "validators": [{
+        "commission": {
+          "commission_rates": {
+            "max_change_rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "rate": "0.100000000000000000"
+          },
+          "update_time": "2020-03-18T16:58:15.477057043Z"
+        },
+        "consensus_pubkey": "tkivalconspub1zcjduepqaqx4hsaejc6psay3remjrsxthlgc8zvzud06qd0w2pxxsfa0assqz27vh8",
+        "delegator_shares": "7000100000000.000000000000000000",
+        "description": {
+          "details": "",
+          "identity": "",
+          "moniker": "hermel",
+          "website": ""
+        },
+        "jailed": false,
+        "min_self_delegation": "1",
+        "operator_address": "tkivaloper1r6nh7g6npn6phgauvnafyqtq4m7sqznuaazar0",
+        "status": 2,
+        "tokens": "7000100000000",
+        "unbonding_height": "0",
+        "unbonding_time": "1970-01-01T00:00:00Z"
+      }, {
+        "commission": {
+          "commission_rates": {
+            "max_change_rate": "0.010000000000000000",
+            "max_rate": "0.200000000000000000",
+            "rate": "0.100000000000000000"
+          },
+          "update_time": "2020-03-12T10:17:05.995417541Z"
+        },
+        "consensus_pubkey": "tkivalconspub1zcjduepqyv3axq76l4d69fgyt6ek9z9sad075hq9ye4d4s96ld6jjzltr2gsrnn5j4",
+        "delegator_shares": "14990001000000.000000000000000000",
+        "description": {
+          "details": "",
+          "identity": "",
+          "moniker": "genesis-1",
+          "website": ""
+        },
+        "jailed": false,
+        "min_self_delegation": "1",
+        "operator_address": "tkivaloper10a4ucqj8hfq0teyp8hzn6emu8jl6eelt5cl4ln",
+        "status": 2,
+        "tokens": "14990001000000",
+        "unbonding_height": "0",
+        "unbonding_time": "1970-01-01T00:00:00Z"
+      }, {
+        "commission": {
+          "commission_rates": {
+            "max_change_rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "rate": "0.050000000000000000"
+          },
+          "update_time": "2020-03-18T21:50:54.687528206Z"
+        },
+        "consensus_pubkey": "tkivalconspub1zcjduepqzu22fam2h5utg5zwtmrkt4haak2ncft36ka4gj54hc6nll666lyslqzj6r",
+        "delegator_shares": "11751820840384.038403840384038402",
+        "description": {
+          "details": "",
+          "identity": "",
+          "moniker": "Sifu Ventures",
+          "website": "http://sifu.ventures"
+        },
+        "jailed": false,
+        "min_self_delegation": "1",
+        "operator_address": "tkivaloper1cj9cdx9mg95lhvpquym08ncgzpjvhmnwpjxywf",
+        "status": 2,
+        "tokens": "11750645658300",
+        "unbonding_height": "0",
+        "unbonding_time": "2020-04-11T21:33:08.280372075Z"
+      }, {
+        "commission": {
+          "commission_rates": {
+            "max_change_rate": "1.000000000000000000",
+            "max_rate": "1.000000000000000000",
+            "rate": "1.000000000000000000"
+          },
+          "update_time": "2020-03-18T14:59:45.935320881Z"
+        },
+        "consensus_pubkey": "tkivalconspub1zcjduepqtzjyx9dvcxtzhf80jjj3j924z4ugcu8hn5pl0ffk39ty5s9uc5nsjpswyq",
+        "delegator_shares": "10011443000100.010001000100010001",
+        "description": {
+          "details": "",
+          "identity": "",
+          "moniker": "junode",
+          "website": ""
+        },
+        "jailed": false,
+        "min_self_delegation": "1",
+        "operator_address": "tkivaloper1m4hzfhjsqk4c3q4ym4gjcp9ejfxdee89md5kfa",
+        "status": 2,
+        "tokens": "10010441855800",
+        "unbonding_height": "0",
+        "unbonding_time": "2020-04-12T21:34:24.588407388Z"
+      }]
+    },
+    "supply": {
+      "supply": [{
+        "amount": "800639411584211",
+        "denom": "tki"
+      }]
+    }
+  },
+  "chain_id": "KiChain-t-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": ["ed25519"]
+    }
+  },
+  "genesis_time": "2020-03-26T14:30:43.7Z",
+  "validators": [{
+    "address": "",
+    "name": "hermel",
+    "power": "7000100",
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "6A1bw7mWNBh0kR53IcDLv9GDiYLjX6A17lBMaCev7CA="
+    }
+  }, {
+    "address": "",
+    "name": "genesis-1",
+    "power": "14990001",
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "IyPTA9r9W6KlBF6zYoiw61/qXAUmatrAuvt1KQvrGpE="
+    }
+  }, {
+    "address": "",
+    "name": "Sifu Ventures",
+    "power": "11750645",
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "FxSk92q9OLRQTl7HZdb97ZU8JXHVu1RKlb41P/9a18k="
+    }
+  }, {
+    "address": "",
+    "name": "junode",
+    "power": "10010441",
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "WKRDFazBliuk75SlGRVVFXiMcPedA/elNolWSkC8xSc="
+    }
+  }]
+}

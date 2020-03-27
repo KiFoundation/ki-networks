@@ -3,7 +3,7 @@
 </p>
 
 # Ki Testnet
-**Current Version :** KiChain-t-0
+**Current Version :** KiChain-t-1
 
 ## How to join   
 **Note :** A fresh install of Ubuntu 18.04 is recommended for this deployment.
@@ -30,7 +30,7 @@ kid unsafe-reset-all --home ./kid
 
 Copy the genesis file to the `./kid/config/` folder:
 ```
-curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/KiChain-t-0/genesis.json > ./kid/config/genesis.json
+curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/KiChain-t-1/genesis.json > ./kid/config/genesis.json
 
 ```
 
@@ -55,17 +55,17 @@ and it looks like this:
 
 ```
 I[2020-02-12|08:52:14.376] Executed block            module=state height=1 validTxs=0 invalidTxs=0
-I[2020-02-12|08:52:14.393] Committed state            module=state height=1 txs=0 appHash=24184D013C8A107964BCD4588A6C4E7955D8F98DCF3013AB8B82ED4F790E4AE7
+I[2020-02-12|08:52:14.393] Committed state            module=state height=1 txs=0 appHash=HASHHASHASH...
 I[2020-02-12|08:52:14.442] Executed block            module=state height=2 validTxs=0 invalidTxs=0
-I[2020-02-12|08:52:14.449] Committed state            module=state height=2 txs=0 appHash=FF0EE6ED6CDD364A1C244BB7DFE7D61DFAD9046EC9D4322BAABF10942D829385
+I[2020-02-12|08:52:14.449] Committed state            module=state height=2 txs=0 appHash=HASHHASHASH...
 I[2020-02-12|08:52:14.474] Executed block            module=state height=3 validTxs=0 invalidTxs=0
-I[2020-02-12|08:52:14.481] Committed state            module=state height=3 txs=0 appHash=535C3FC5CF880AF9B98E28AB410D401B46F561432CF667EBE59A9BE6274331C3
+I[2020-02-12|08:52:14.481] Committed state            module=state height=3 txs=0 appHash=HASHHASHASH...
 I[2020-02-12|08:52:14.507] Executed block            module=state height=4 validTxs=0 invalidTxs=0
-I[2020-02-12|08:52:14.514] Committed state            module=state height=4 txs=0 appHash=4303336C99417D4D0242E84003411C30A30B08421C6858B847736A6437688D9B
+I[2020-02-12|08:52:14.514] Committed state            module=state height=4 txs=0 appHash=HASHHASHASH...
 I[2020-02-12|08:52:14.539] Executed block            module=state height=5 validTxs=0 invalidTxs=0
-I[2020-02-12|08:52:14.547] Committed state            module=state height=5 txs=0 appHash=B29267030784C9B9461FBBCF8E539144AD5ADB2CCD32BD81A99C8EDD015A096F
+I[2020-02-12|08:52:14.547] Committed state            module=state height=5 txs=0 appHash=HASHHASHASH...
 I[2020-02-12|08:52:14.572] Executed block            module=state height=6 validTxs=0 invalidTxs=0
-I[2020-02-12|08:52:14.579] Committed state            module=state height=6 txs=0 appHash=5BD981B1A3D238BDD03BD2396C56AF64F7807DC6736A2F217E2D231EBA63B816
+I[2020-02-12|08:52:14.579] Committed state            module=state height=6 txs=0 appHash=HASHHASHASH...
 ...
 ```  
 
@@ -93,7 +93,7 @@ kicli tx staking create-validator \
                   --amount=100000000tki \
                   --pubkey `kid tendermint show-validator --home ./kid/` \
                   --moniker=<YOUR VALIDATOR NAME> \
-                  --chain-id=KiChain-t-0 \
+                  --chain-id=KiChain-t-1 \
                   --from=wallet-1 \
                   --home ./kicli/
 ```

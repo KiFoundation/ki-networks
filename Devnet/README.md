@@ -102,6 +102,5 @@ kicli tx staking create-validator \
 To know more about the various possible configurations and on editing your validator, please refer to the dedicated [documentation](https://github.com/cosmos/gaia/blob/master/docs/validators/validator-setup.md#edit-validator-description). Once this transaction has passed, and if the bonded amount is sufficient to be in the active validator list, your validator will automatically start validating new blocks.
 
 
-
-## How to upgrade
-...
+## Security
+If you discover a security vulnerability in this project, please report it to security@foundation.ki. We will promptly address all security vulnerabilities.

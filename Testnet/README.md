@@ -37,7 +37,8 @@ curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/KiC
 Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `./kid/config/` directory. Change the default `moniker` to whatever you want (the default name is the machine name). Then provide in in the field `persistent_peers` the address of one of the following persistent peers.
 
 ```
-persistent_peers="58bda4854b4264cc1ae0f52d89922d6ba4725791@94.23.3.107:26656"
+persistent_peers="58bda4854b4264cc1ae0f52d89922d6ba4725791@94.23.3.107:26656,
+                  d3eec56d5d3330773e6be0bb89bf93f1ebd09b8d@10.30.4.160:26656"
 ```
 
 Now that the node is configured, you can start it.
@@ -101,4 +102,4 @@ kicli tx staking create-validator \
 To know more about the various possible configurations and on editing your validator, please refer to the dedicated [documentation](https://github.com/cosmos/gaia/blob/master/docs/validators/validator-setup.md#edit-validator-description). Once this transaction has passed, and if the bonded amount is sufficient to be in the active validator list, your validator will automatically start validating new blocks.
 
 ## Security
-If you discover a security vulnerability within this project, please send an e-mail to security@foundation.ki. We will promptly address all security vulnerabilities.
+If you discover a security vulnerability in this project, please report it to security@foundation.ki. We will promptly address all security vulnerabilities.

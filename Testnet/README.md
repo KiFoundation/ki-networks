@@ -37,8 +37,7 @@ curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/KiC
 Once done, you need to give a name to your node and indicate the seed server to which it should connect to join the network. All of this can be done in the `config.toml` that can be found in the `./kid/config/` directory. Change the default `moniker` to whatever you want (the default name is the machine name). Then provide in in the field `persistent_peers` the address of one of the following persistent peers.
 
 ```
-persistent_peers="58bda4854b4264cc1ae0f52d89922d6ba4725791@94.23.3.107:26656,
-                  d3eec56d5d3330773e6be0bb89bf93f1ebd09b8d@15.188.202.16:26656"
+persistent_peers="58bda4854b4264cc1ae0f52d89922d6ba4725791@94.23.3.107:26656,d3eec56d5d3330773e6be0bb89bf93f1ebd09b8d@15.188.202.16:26656"
 ```
 
 Now that the node is configured, you can start it.

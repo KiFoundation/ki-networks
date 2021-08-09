@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "OmniFlix Network",
+            "identity": "535BF8D68742ACED",
+            "website": "https://omniflix.network",
+            "details": "OmniFlix is a p2p network for creators, curators and their sovereign communities to mint, manage and monetize assets. Developed Cosmic Compass, winner of the Best Custom Zone category in Cosmos (GOZ) and run nodes on networks that share our vision."
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki157n3qq5q28ntmmjvqrjrdajjtswaxemsc9k525",
+          "validator_address": "tkivaloper157n3qq5q28ntmmjvqrjrdajjtswaxemst97h4h",
+          "pubkey": "tkivalconspub1zcjduepq2z6l85khaehqqgl26vhm4qlaxxxek5w96urefhuthxke96smm60q5et59n",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AoZ9je3mRDAdQyZNFoUm3BU/R/xQckHm52aTT4n4iDWB"
+        },
+        "signature": "Cd7dIKrqzAYx0TAz4l+oZBRHr9d4dkxHzW7ed01HSSxQ6S1uX5C8mGvy/A5uDBpBhi+t0hduzVmHjo7+BL47Og=="
+      }
+    ],
+    "memo": "a99b1792b99edbdddf6ffcb2e74fb6fbaf29a6c5@45.72.100.115:26656"
+  }
+}

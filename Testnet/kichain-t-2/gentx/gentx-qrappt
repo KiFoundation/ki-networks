@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "qrappt",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1z45r6gu5vqjdvja0s37svn8dwlczvwnfa70snf",
+          "validator_address": "tkivaloper1z45r6gu5vqjdvja0s37svn8dwlczvwnfw78nv2",
+          "pubkey": "tkivalconspub1zcjduepqp7cw85jenm22nqlwvepcs2qw3t4wwcsw0n8j470fuc30nzw8t5tqt6ry8c",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AujaJjnYVL4afd0AUZAzNLvSAHL0p7ETUvmokcKiJfmu"
+        },
+        "signature": "pVkLGGlgw7ozHOJd7qfwYN9jsvoDn2rEVtAnEdUBtr0PJ8T1HUnoQqNZslidH2R5NUpSHQtj3BvVfAwY2OZWFw=="
+      }
+    ],
+    "memo": "4dae01f82eac941c6e970eb9554b9e57afba995e@88.198.226.56:26656"
+  }
+}

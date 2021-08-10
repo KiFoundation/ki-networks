@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "TonyStark",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1p06w33dje47grp5l5dreas64l2akhsfc6a3svd",
+          "validator_address": "tkivaloper1p06w33dje47grp5l5dreas64l2akhsfcfaennw",
+          "pubkey": "tkivalconspub1zcjduepqjt4hargpflfxuk8zv9k6v5u3fdtkq7280yx080nh0psuxnsr08vqmt3u5u",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AssEeoMpOpinM8vSylOU991M27NK8OmzkUkSQn9feXel"
+        },
+        "signature": "VH4Th+C8unOcncrdfBdXfK9VyQ9rc0t5oO1bz+8Ssr1R1foDkY8RYl7ooe5eHf6A/tT+n4oNXcFzTDUmywWmIQ=="
+      }
+    ],
+    "memo": "34aec3f731e5001ed0d7ed23d48edcc85f5e0f9e@23.88.60.182:26656"
+  }
+}

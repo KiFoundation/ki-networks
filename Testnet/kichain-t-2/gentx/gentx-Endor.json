@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Endor",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1z7rlq8udrwwkkf8g0mrhzry9uvfahjpxug3ujx",
+          "validator_address": "tkivaloper1z7rlq8udrwwkkf8g0mrhzry9uvfahjpx0geld9",
+          "pubkey": "tkivalconspub1zcjduepqzez265p33fjyugqrjga8y0q5zakhe24cj0v8rh23hdfftdg9nquqxwj3gw",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AzJoHTbF4yUl+M6jigOYo1TuN7brE2Th0t9mwv0Jrt3u"
+        },
+        "signature": "/571F3Tz8r3PDGEdBqr6xJJQ13lCuNipK8iFVsrpRxAP8Q1AQ7KFp7P2Xj5czBjZfT/xsVK0SmMWthshq+QZHA=="
+      }
+    ],
+    "memo": "d5348a549f84aa57bc8579647c1f5d74a0f18564@192.168.1.104:26656"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Daksha Validator",
+            "identity": "B5D4A18843FE77E3",
+            "website": "",
+            "details": "A secure and reliable validator node for cosmos-sdk based blockchain networks."
+          },
+          "commission": {
+            "rate": "0.050000000000000000",
+            "max_rate": "0.250000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1a4xwtar7v9syslug7fgw5kqm67fy5gkzfqm6u7",
+          "validator_address": "tkivaloper1a4xwtar7v9syslug7fgw5kqm67fy5gkz6qnera",
+          "pubkey": "tkivalconspub1zcjduepqwj7gku90m8048f5mfdk8fp307yzeqtr6w7x64e45nh0ddam20pcqj2uy3a",
+          "value": {
+            "denom": "uxki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A0P7DD2RLLGCybaVB6jvXrlW8eB7RpRUd/zmX3Cp+bHx"
+        },
+        "signature": "BYdTk4CddYC2Z5ZsB7vCuInjEG0nXVXMkVKwiMfBVyAAakLQAJThzvEEitbnKOojx+ytrq3iFHP53+hizs0z0Q=="
+      }
+    ],
+    "memo": "be0fd9e206f29b5920c6898d52e753455c637d9a@192.168.1.102:26656"
+  }
+}

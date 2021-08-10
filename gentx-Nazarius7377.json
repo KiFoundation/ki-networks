@@ -1,0 +1,8 @@
+{"type":"cosmos-sdk/StdTx","value":{"msg":[{"type":"cosmos-sdk/MsgCreateValidator","value":
+{"description":{"moniker":"source","identity":"","website":"","details":""},"commission":
+{"rate":"0.100000000000000000","max_rate":"0.100000000000000000","max_change_rate":"0.100000000000000000"},
+"min_self_delegation":"1","delegator_address":"tki1zrdp0jhf3a9xqx9w75l8fxzyc433w79jnsvguq","validator_address":
+"tkivaloper1zrdp0jhf3a9xqx9w75l8fxzyc433w79jqsytrr","pubkey":"tkivalconspub1zcjduepqekmgxh4f0t7cmfv8xy28e4hse0a8y4g43w9n364a4q26cnmmj9kqx76kxa",
+"value":{"denom":"utki","amount":"100000000"}}}],"fee":{"amount":[],"gas":"200000"},"signatures":[{"pub_key":{"type":"tendermint/PubKeySecp256k1",
+"value":"AoAw6wwmDZ8Fb0x73AVmTvie50p6immyff31HPv0ut7Q"},"signature":"N1pOGOeg9ppL1D8qr9PMOmdjDu4Sy0yDqdVX4BOblIp3XUC+qCHy3LZceHmfjQyrEtHfCzISnPFxTyn26ytSqw=="}
+],"memo":"8a62b8c176a730823e2c23a6c1222b00971e88ef@167.99.216.84:26656"}}

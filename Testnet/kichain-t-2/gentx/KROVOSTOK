@@ -1,0 +1,41 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [{
+      "type": "cosmos-sdk/MsgCreateValidator",
+      "value": {
+        "description": {
+          "moniker": "KROVOSTOK",
+          "identity": "",
+          "website": "https://zyx.network/coin",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "tki19ncfpnpt3usq54d9yxyxz65hhfzzemtx3tmlz4",
+        "validator_address": "tkivaloper19ncfpnpt3usq54d9yxyxz65hhfzzemtxztnuak",
+        "pubkey": "tkivalconspub1zcjduepqtya4ldjheyucay6s87t5wq3632n0stlqm2mm2gts6t2k06aevwtqehq57w",
+        "value": {
+          "denom": "utki",
+          "amount": "100000000"
+        }
+      }
+    }],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [{
+      "pub_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "AtGQBbF+uvamJdlza4JveT4CWZaMeaxl2HVdSKz/d29D"
+      },
+      "signature": "SKOpGWB983BzGHIBmB2jkl2kh7B3R0HvDFl2+p0BL/M1JNICuBTcG7zydL6uq9BvlYQjz2SumIzKV96g7pAyIQ=="
+    }],
+    "memo": "23e3ed7f559c360e6b600eb185314a08c69638c2@49.12.6.228:26656"
+  }
+}

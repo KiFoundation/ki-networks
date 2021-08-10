@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "cryptomannew",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1rwgq5fwk4090qp9aanex90s29e7lz44405alwy",
+          "validator_address": "tkivaloper1rwgq5fwk4090qp9aanex90s29e7lz444u54u3
+          "pubkey": "tkivalconspub1zcjduepqetqmkn6tmdnm4xen3ty2h83pfc4z04pgx7ydu
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A82GcJrwGfaA8OTveyrzQvEx/p6YFWnHFqQ/Ik1mAbou"
+        },
+        "signature": "FsWyBn9ge2wXhF96xpyLjW/81GRxYwXN057DFCzdiLF5oHudnas+959Cvx
+      }
+    ],
+    "memo": "9615c5d5624fb29b70c3ee3c5c2394c307621064@135.181.103.124:26656"
+  }
+}

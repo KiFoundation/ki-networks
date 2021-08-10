@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Alserst",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1j5vl8u3xqkk9pf8qlldtfs4rulme79uzhhm7eh",
+          "validator_address": "tkivaloper1j5vl8u3xqkk9pf8qlldtfs4rulme79uzyhnax5",
+          "pubkey": "tkivalconspub1zcjduepqezxhd5negt2fltqrc0h7uwn5zfa5sm9tu9ts4mghaan88xrvv4cq4ck7qv",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "ArSuuo4C1WjF7WNHXQRMJR1cFJCnQKFIlMMQvZeuLVOe"
+        },
+        "signature": "UsAebdnxMezMsIb38XSx/8oN1yEo9nrG3WcY+oQxvrcMPKPlsjcAc6SLuf2IB3rVY5Xb+sY6ZsL1/JUEFsuNlA=="
+      }
+    ],
+    "memo": "539bdccc99954e49a52c2b49bec533df7826daa6@95.217.183.221:26656"
+  }
+}

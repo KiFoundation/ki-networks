@@ -1,0 +1,41 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [{
+      "type": "cosmos-sdk/MsgCreateValidator",
+      "value": {
+        "description": {
+          "moniker": "gloreix",
+          "identity": "",
+          "website": "",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "tki1axfx73ea922pllau0lv6fzu78gg2cksre0ajl0",
+        "validator_address": "tkivaloper1axfx73ea922pllau0lv6fzu78gg2cksr2043qv",
+        "pubkey": "tkivalconspub1zcjduepq3rhrxnlag243eajzwt0nlvtwzgy0f0wrycc9q94fm7w9ecmqz0hs55eau2",
+        "value": {
+          "denom": "utki",
+          "amount": "100000000"
+        }
+      }
+    }],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [{
+      "pub_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "A5Hc7XsprO5TyMEpHpC6TGSm9q7kjlJEBRSMAGCC5ar0"
+      },
+      "signature": "XiFilq/cvG/ackMz2Mazn9bPrEGmoQmrYXz1evBx54oYfBX8Tlt/4DS3Uo6n6AavnDvwaIlwZ3d1F1WJR8bIvA=="
+    }],
+    "memo": "0795d038eb0bd193a20b7f018466ab8adce19849@194.163.132.91:26656"
+  }
+}

@@ -1,0 +1,47 @@
+{
+   "type":"cosmos-sdk/StdTx",
+   "value":{
+      "msg":[
+         {
+            "type":"cosmos-sdk/MsgCreateValidator",
+            "value":{
+               "description":{
+                  "moniker":"vps-test-abdel",
+                  "identity":"",
+                  "website":"",
+                  "details":""
+               },
+               "commission":{
+                  "rate":"0.100000000000000000",
+                  "max_rate":"0.100000000000000000",
+                  "max_change_rate":"0.100000000000000000"
+               },
+               "min_self_delegation":"1",
+               "delegator_address":"tki1kusx0w0c3uzpppusz8uak88mgqyf7ym744fpnf",
+               "validator_address":"tkivaloper1kusx0w0c3uzpppusz8uak88mgqyf7ym7x4pzv2",
+               "pubkey":"tkivalconspub1zcjduepqszwngapa9pg2znn3fvgwul2q9xpnu6y4ajndlhpmafe7s3xh566sm6us5d",
+               "value":{
+                  "denom":"utki",
+                  "amount":"100000000"
+               }
+            }
+         }
+      ],
+      "fee":{
+         "amount":[
+
+         ],
+         "gas":"200000"
+      },
+      "signatures":[
+         {
+            "pub_key":{
+               "type":"tendermint/PubKeySecp256k1",
+               "value":"A8AnwnzCCQ1+BApyFvTq/Uw83ivyC3wEbZCNEZs05NmP"
+            },
+            "signature":"aUn8KlKzlXAysWk8tUxUl6iz/O0iZ4dyq3kuJz9TSh9CBaz1qKRDrDBIdypzSO69hghs+hdD3k5TdLnzwaZELQ=="
+         }
+      ],
+      "memo":"46b25d81510f8dcc535ca0924961b266e4f59244@135.125.183.94:26656"
+   }
+}

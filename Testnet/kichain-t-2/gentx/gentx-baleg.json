@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "baleg",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1v4qad5lg969j0gatxtvq84n908s8ztzrxgypgq",
+          "validator_address": "tkivaloper1v4qad5lg969j0gatxtvq84n908s8ztzr4gvzhr",
+          "pubkey": "tkivalconspub1zcjduepqwm7physpjt5g9l30508xg806tjy69l34l8c7pzch33vp7u7p4dfs2k0p9l",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Arwes5ysGr2/RPyahAQ930/QkbOZcaqXD94juhTg93RK"
+        },
+        "signature": "egncMIwALYc1jIxh5K6mCLEaX2PmYWuJCcmFfUhumrR12ttm7Mw1nPi2L9k+8o7/YF+BqqjY8GLSEZjNfZRZ7g=="
+      }
+    ],
+    "memo": "6baf35e5b630d316d35a3935458f0b7c64b4924b@173.212.207.133:26656"
+  }
+}

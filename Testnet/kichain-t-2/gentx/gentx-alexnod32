@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "alexnod32",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1sqtgejkzpl9pgr4jmhen73832hh972e6l2rxzd",
+          "validator_address": "tkivaloper1sqtgejkzpl9pgr4jmhen73832hh972e6v2t9aw",
+          "pubkey": "tkivalconspub1zcjduepq473cgk2mlh658sd5p9tj7cjv2d0jyadqhr8z0nrkjhdwg3vruq3s38glw5",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AuWtZDrNXHeeBapItDnQ29NrwjB0Kgs8V0fRs/uBU5eW"
+        },
+        "signature": "8O/SXqTVOjZgAkWvsblJYLCAD+VNCUizq0moCNBZxGNpZhrRYFFYj68ZkLeIYGV/g5doKQBsFUFn0mebb9HgzQ=="
+      }
+    ],
+    "memo": "6a3cb2cf17a2b18ede9feb61a73d5993737a5b2d@173.249.17.226:26656"
+  }
+}

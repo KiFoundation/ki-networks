@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "jefffree73",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1er26atvej8glcg5xrhtttvrn9naf2vsrvv68aq",
+          "validator_address": "tkivaloper1er26atvej8glcg5xrhtttvrn9naf2vsrlvjyzr",
+          "pubkey": "tkivalconspub1zcjduepq6vam746w9mmkpqkqrtmchr4r06q3wdgyjslvcgqqffmcr70ywvnqnacka2",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "ApGQckf+kR/T2ldTjf5zGVfOTk60JWRdK1/lCFvkpYAw"
+        },
+        "signature": "v6oTawxS8SomRXuq1ByZPmQBHoEld6R3Cx7YW9D+kbslRy9muQGG9viJsnqs8Pan5jjzx2aDh3GVbjY9cS6lvw=="
+      }
+    ],
+    "memo": "3f425cbd0908ac9e1a711cf4528ddcbe73e28ba8@82.146.63.247:26656"
+  }
+}

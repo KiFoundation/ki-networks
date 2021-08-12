@@ -1,0 +1,32 @@
+type	"cosmos-sdk/StdTx"
+value	
+msg	
+0	
+type	"cosmos-sdk/MsgCreateValidator"
+value	
+description	
+moniker	"kriptachina"
+identity	""
+website	""
+details	""
+commission	
+rate	"0.100000000000000000"
+max_rate	"0.100000000000000000"
+max_change_rate	"0.100000000000000000"
+min_self_delegation	"1"
+delegator_address	"tki16tqrx7g2nutr5hrtpnvqwakny3cgmpnddjw560"
+validator_address	"tkivaloper16tqrx7g2nutr5hrtpnvqwakny3cgmpnd7jxh9v"
+pubkey	"tkivalconspub1zcjduepqcrnvry8pndss5yhafew8mj9ldkf2yl8umq0lctk5e0a8fytmnrzq9w5qkg"
+value	
+denom	"utki"
+amount	"100000000"
+fee	
+amount	[]
+gas	"200000"
+signatures	
+0	
+pub_key	
+type	"tendermint/PubKeySecp256k1"
+value	"Az123JQDAm7oypEQ8DmUX50aOu3VJCbfvYTKZaRQ8sdv"
+signature	"l8J7s0dJQzYl8YaS+0N2k1ITkd3SRRehUMtuNtsj4Hd/PBOyHA4iR774Rku3xRZfaayTWkpeKF2EY2ps30dy3A=="
+memo	"b70ee86525afea681d1d564150199fcde7ad773f@95.217.156.206:26656"

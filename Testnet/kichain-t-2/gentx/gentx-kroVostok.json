@@ -1,0 +1,41 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [{
+      "type": "cosmos-sdk/MsgCreateValidator",
+      "value": {
+        "description": {
+          "moniker": "kroVostok",
+          "identity": "",
+          "website": "zyx.network",
+          "details": "just me"
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "tki12cnfv6qxu6uueat07yah7sy8jzjg093hkdx4gu",
+        "validator_address": "tkivaloper12cnfv6qxu6uueat07yah7sy8jzjg093h9dwkhl",
+        "pubkey": "tkivalconspub1zcjduepqjhj8enhr3udxp309hjwuqql7mdymu0ezqxze500nawtfre4zaq2qwennff",
+        "value": {
+          "denom": "utki",
+          "amount": "100000000"
+        }
+      }
+    }],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [{
+      "pub_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "A78u9n3Cju7d4dXFFlAwwYxhW2RuCh6aNMLtffI8gGeV"
+      },
+      "signature": "qwLdWy0Nm0S0mjzjSHDaP171Xw/BIerjrciMC3RZCZ5fq3ftf4+c6mAUogufQ41ug5E5+GItCUAKxamWDdJzvQ=="
+    }],
+    "memo": "bdc66c095225cb276fac89d79b7165bccbad5709@49.12.6.228:26656"
+  }
+}

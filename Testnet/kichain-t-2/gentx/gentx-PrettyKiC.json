@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "PrettyKiC",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1w73tazhg7l06fvw55v8wzk750uf305y3cznhee",
+          "validator_address": "tkivaloper1w73tazhg7l06fvw55v8wzk750uf305y3tzm5x6",
+          "pubkey": "tkivalconspub1zcjduepqhfvv0tz0dcf6xeexh6exq7lsh34dzpqzhjx8w2rcs35200px28ss7jhryt",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A56h5K9yvdZ0Dvy+xsKHiK41MVZ1iAj43bvg2I/INDS4"
+        },
+        "signature": "qiHmlohOa43jizRE8wXT/zXIZ0r45cyZr5BE6QVYbFweRv6Rx1sB7e5rBzb+rrLJRjxevq9Lox9AM0ezHAAzpw=="
+      }
+    ],
+    "memo": "12cac79199d9a01530d71765dbece304c9139816@65.21.151.190:26656"
+  }
+}

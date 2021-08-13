@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "hayabusa",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki16xgm0j5p5jypcswl2cpnjmfgnkmtrkhk76m3fn",
+          "validator_address": "tkivaloper16xgm0j5p5jypcswl2cpnjmfgnkmtrkhkd6njks",
+          "pubkey": "tkivalconspub1zcjduepqf5r23p90vq4hml8pgy7tce0jzluamvkgd8ncdkrw5ykmm6aw835qee0wmq",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "As/16R+iOKkrTR+gBj7lyzM3lLJzlkdoYe+k+el8eI9O"
+        },
+        "signature": "g9TzvrA+pp+5l18rXVEh6iStCbYmbczAjl4nO3yjhapMRjhAee+rfdDx5INOdclOPUB1bYRLv7wVwj7H/UQ6gQ=="
+      }
+    ],
+    "memo": "cb101de60f070aa760ab30dde2f9fd32748cdb6f@116.203.210.64:26656"
+  }
+}

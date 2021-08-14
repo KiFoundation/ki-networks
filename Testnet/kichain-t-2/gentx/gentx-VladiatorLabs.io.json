@@ -1,0 +1,45 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+        "msg": [
+            {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                    "description": {
+                        "moniker": "VladiatorLabs.io",
+                        "identity": "",
+                        "website": "",
+                        "details": ""
+                    },
+                    "commission": {
+                        "rate": "0.100000000000000000",
+                        "max_rate": "0.100000000000000000",
+                        "max_change_rate": "0.100000000000000000"
+                    },
+                    "min_self_delegation": "1",
+                    "delegator_address": "tki1d3as2yav9aanyv9pzx8uvkplj2p29w5pkayupa",
+                    "validator_address": "tkivaloper1d3as2yav9aanyv9pzx8uvkplj2p29w5p9avl77",
+                    "pubkey": "tkivalconspub1zcjduepqj4k9m8yz52slxx5t54ak7vcl0n6sd65xdau0gherdhk3rdxs34fsv25xe3",
+                    "value": {
+                        "denom": "utki",
+                        "amount": "100000000"
+                    }
+                }
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas": "200000"
+        },
+        "signatures": [
+            {
+                "pub_key": {
+                    "type": "tendermint/PubKeySecp256k1",
+                    "value": "A1i9pG/XKbMyw8vJOHKQYIGtJlFYmAR/ZXUihKH0x1cT"
+                },
+                "signature": "NoiNPbn7pXoVuiztOw6cMVssBt4g8FThkRgVVWMuemhrZ7shQPTsg99zUepp6VmNZgqrJsC5bx5DPOF2UOIN8w=="
+            }
+        ],
+        "memo": "f0b108ba4109d615b265f6e23536445ac01fb75c@10.192.10.220:26656"
+    }
+}

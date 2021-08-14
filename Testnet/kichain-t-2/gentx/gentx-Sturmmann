@@ -1,0 +1,41 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [{
+      "type": "cosmos-sdk/MsgCreateValidator",
+      "value": {
+        "description": {
+          "moniker": "Sturmmann",
+          "identity": "",
+          "website": "",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "tki1gl0aayj9z4euf7dxqgdccle7dz2g7eancgzqm3",
+        "validator_address": "tkivaloper1gl0aayj9z4euf7dxqgdccle7dz2g7eantg2ryj",
+        "pubkey": "tkivalconspub1zcjduepqg4vzsw6pdmdh40qy9rc0kp5k2m2zsxy759rcqmn8k7cwc5gwd8eqq0hd6m",
+        "value": {
+          "denom": "utki",
+          "amount": "100000000"
+        }
+      }
+    }],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [{
+      "pub_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "AiAxZtOGSUp8b8vxkymkxI9h5fh0YKumS/HNd6laBbLM"
+      },
+      "signature": "rgiNlq6BOofuwBtPdBiXXARGl4Sw9WB+PfT7/cWD8CwwuOZXtTeohlHkTXaMm+gnj0ZovKsGaV1dczFVCB3M/g=="
+    }],
+    "memo": "ec0c11ccdcf64b07dd7fb25cb13fd5833f3a12ae@91.142.78.105:26656"
+  }
+}

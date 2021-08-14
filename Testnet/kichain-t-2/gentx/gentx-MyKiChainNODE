@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "MyKiChainNODE",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1zczl0ehw6g8n0t5sujnzv0z0wdacx8ltz5qs8d",
+          "validator_address": "tkivaloper1zczl0ehw6g8n0t5sujnzv0z0wdacx8lt35gncw",
+          "pubkey": "tkivalconspub1zcjduepqkdvrz3jer0zhc7lphcy0p958wmgu3t7m5xgpdshcfrnu39h4kd4qz6py2l",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AlU9vsyPcI2uJedYVaxf1T8ZC+C0YMRVdXj+H+6j2y8p"
+        },
+        "signature": "JRBIzqLk+JbsgcEP3oYEVCru8nGToN05MwPeWOIUoBcO++v7jz1daI/gbcc4eRQColcCc5D9ZH6o1NYs8g1yxQ=="
+      }
+    ],
+    "memo": "cc87ef2fbfc38df2c064ab86c6ff2d4e4f5ff49b@23.88.37.27:26656"
+  }
+}

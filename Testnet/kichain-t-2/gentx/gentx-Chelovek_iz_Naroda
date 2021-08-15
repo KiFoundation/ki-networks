@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Chelovek_iz_Naroda",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1nt2c7sdm5a0u3fpuf6ahxxxf6vjexew4ylcnpl",
+          "validator_address": "tkivaloper1nt2c7sdm5a0u3fpuf6ahxxxf6vjexew4hlss7u",
+          "pubkey": "tkivalconspub1zcjduepqfm0yhlj85l0hx5h2v3g6dw4g8heltxa3cgnf43scx8d8msj4cecqx6x6c5",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Aj9fXXKVWdjN52cb+M/fLkXMo0KzmS89ICrGWmj+irk5"
+        },
+        "signature": "xeRnfjFzqp3UJkul7T+zl9qo1Tw116M9gjvWJpX1Hy908b3oXv2kgcRtnJAkysydoDTLmdY7pN3oRrhf7WgUJw=="
+      }
+    ],
+    "memo": "67bb5b1adbed39e69ece2bed1438279ef8f6a9a6@95.216.184.185:26656"
+  }
+}

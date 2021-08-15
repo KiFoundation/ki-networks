@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Allahddin_node",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1r33n77t5yf830dlvwfgh8wgm8uzajzqqssjtc6",
+          "validator_address": "tkivaloper1r33n77t5yf830dlvwfgh8wgm8uzajzqqrs6g8e",
+          "pubkey": "tkivalconspub1zcjduepquje96rjymvh25r6t04a8r6wlhwjsgfa2dt3a2v2kqx7v663qy4jq3vyc9k",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AqQkYwKT8fWw2ugxdl8ZZsWDhBbRHpPJDKXLJZrMS6AH"
+        },
+        "signature": "KAlWj0MaNxMvDyrmv2ULz++7G2SG3xhMoYiKd4bJD2h7VWGB4zkDCD0TKchlgIszi9W+h/N2iVj5eti9e+wYww=="
+      }
+    ],
+    "memo": "0b6fd65111552debbb0d25a295597b32f918f355@10.129.0.25:26656"
+  }
+}

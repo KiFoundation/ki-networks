@@ -1,0 +1,41 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [{
+      "type": "cosmos-sdk/MsgCreateValidator",
+      "value": {
+        "description": {
+          "moniker": "NTR",
+          "identity": "",
+          "website": "",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "tki1up7k5f0a5hkccv2r93sy7c7043x53xh7vdh7ez",
+        "validator_address": "tkivaloper1up7k5f0a5hkccv2r93sy7c7043x53xh7ldlaxp",
+        "pubkey": "tkivalconspub1zcjduepq2cpw76mjmh6xznd06wls2ccma2wmyzytegh60ayqc7cm9mu484ssxcvaw4",
+        "value": {
+          "denom": "utki",
+          "amount": "100000000"
+        }
+      }
+    }],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [{
+      "pub_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "A84ci0AUQbTq8sSlvm/X4p0Em0dtG1M5tiMUaxY0bfVO"
+      },
+      "signature": "dXacDie30kza6kW4b+fZg8SA0+qYEgCtMOO0EKzpdEIbWpiImLm735SmW/l397qTMftDUQ6eVPKvBmXMOymRSQ=="
+    }],
+    "memo": "c49a117e18be3d6b01c7d2269395241a4378a65e@54.36.103.223:26656"
+  }
+}

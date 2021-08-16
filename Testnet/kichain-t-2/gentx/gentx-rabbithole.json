@@ -1,0 +1,39 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "rabbithole",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1dw9aspu04ru8fvxlmphr3yqcj6vln7859r8q4y",
+          "validator_address": "tkivaloper1dw9aspu04ru8fvxlmphr3yqcj6vln785kr0r28",
+          "pubkey": "tkivalconspub1zcjduepqr85a4nv8rs43993hyhm3t9t0hwt70q3kw5d39vcqkusyfu2lkfxqwmdjzs",
+          "value": { "denom": "utki", "amount": "100000000" }
+        }
+      }
+    ],
+    "fee": { "amount": [], "gas": "200000" },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AxWqy+rW/0IhqzTxtOUwCl2h6HkK5AWaW1akTwhqykFw"
+        },
+        "signature": "4S5VB8qKgAP7aSmq+M8xieBm9cN3t1o7hX9I+VL/BYNldYtsZhNIezaq5HiFhW/ytWsF6BgdYyZZHYI9GJnqfQ=="
+      }
+    ],
+    "memo": "f11e58e31dae07c626a20e899ec795f2a3ca1484@75.119.146.209:26656"
+  }
+}

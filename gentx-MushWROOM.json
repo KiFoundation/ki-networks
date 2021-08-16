@@ -1,0 +1,45 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+        "msg": [
+            {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                    "description": {
+                        "moniker": "MushWROOM",
+                        "identity": "",
+                        "website": "",
+                        "details": ""
+                    },
+                    "commission": {
+                        "rate": "0.100000000000000000",
+                        "max_rate": "0.100000000000000000",
+                        "max_change_rate": "0.100000000000000000"
+                    },
+                    "min_self_delegation": "1",
+                    "delegator_address": "tki1e4afd9p5vgvmq02c4p2x7zszywv0w8ermlmfk5",
+                    "validator_address": "tkivaloper1e4afd9p5vgvmq02c4p2x7zszywv0w8ergln2fh",
+                    "pubkey": "tkivalconspub1zcjduepqd28xf695fukl0vncdjwle4t4q6zesgsfplz266hlxcpj8e3myplsqv8ytj",
+                    "value": {
+                        "denom": "utki",
+                        "amount": "100000000"
+                    }
+                }
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas": "200000"
+        },
+        "signatures": [
+            {
+                "pub_key": {
+                    "type": "tendermint/PubKeySecp256k1",
+                    "value": "AndNdM0lm2Z0P7et40IoXOU9LVLfQdpI2nFoqoPD5eOG"
+                },
+                "signature": "XwDTAle9K+t65VmU2luwRz7DxRpdqiFV1wtykYxCdsZxCFTUkQcNizjN09bfqXplZBcMI0eVPPX3Q6IxHkUZnw=="
+            }
+        ],
+        "memo": "4b080b9751bb47ff9ae2beffcc941f3e177047d9@45.35.33.142:26656"
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "stakingcare",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki10umaa42hefcykr07y7shnezwc5ycfpewc3qvfd",
+          "validator_address": "tkivaloper10umaa42hefcykr07y7shnezwc5ycfpewt3g0kw",
+          "pubkey": "tkivalconspub1zcjduepqz6527su7v3z3hd6rr667n9ry5yndynlwh99wxm97qda7yhq0rt4qz29x64",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A7+7bkjuyeo8oWtJq+IfW9n4wYOXhAS3udzbOnJOh+Jw"
+        },
+        "signature": "7G/LTLnXnIus9P+HB4soyUC3KPJdVz6WwOcr4hi7llxs1G703o9Z9VjTSXcyzMEMu3DE2aNhHl1gPI2PuWp6GA=="
+      }
+    ],
+    "memo": "bc5c95b09ba8e7240bb695222a7b0f825b7f83d1@65.21.3.86:26656"
+  }
+}

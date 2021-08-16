@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "ARXON",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki13efzcjq2tg3rcqeaz45mvtzeyrc0y2rrz96y2v",
+          "validator_address": "tkivaloper13efzcjq2tg3rcqeaz45mvtzeyrc0y2rr39j840",
+          "pubkey": "tkivalconspub1zcjduepqccd5cvz740z6pefzsxdw5rctxjw3swzpvnxl0hxdw0dxkjwwa59s4uux2l",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AkyswuzupJlanGcyQuJBjNHGWcbdZLeH043O3wBXqUTw"
+        },
+        "signature": "iwHqdik5x0/FrdYA3zKEuzijrMgykbbjv8BhniD2ILZ4xOJRvxsKKbAOF5cstRjD0jRk5opxVD6CW9jHsi3YeA=="
+      }
+    ],
+    "memo": "fec9a97e50af969030edc32c7c38657fdd70a4fe@194.163.140.171:26656"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "seainvestor",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1jqwqxqwk0q0762lfcvj3ddgkaxhk4g8wzxuj4t",
+          "validator_address": "tkivaloper1jqwqxqwk0q0762lfcvj3ddgkaxhk4g8w3x532g",
+          "pubkey": "tkivalconspub1zcjduepq354f537k3xn0cv0lkhprrkrqd6m5xm43efce4hw90xxa57476tjqtzykfr",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A+C74uiJ1h3JALZYPkItojo6DkJdVMkhjgm/IG+geiLk"
+        },
+        "signature": "C8SJAc7rxezPx/mcrQAYVvJon5dh2SPB549d7AKRhh5GKFjh0EpmkfnuOo6fYN9oaNGQnsZ6ZyOqBZLoBya0Xw=="
+      }
+    ],
+    "memo": "b00773a88b43143ffa1c5b68200f2be515d957ed@104.149.131.102:26656"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Cosmic Validator",
+            "identity": "FF4B91B50B71CEDA",
+            "website": "https://cosmicvalidator.com",
+            "details": "A reliable, passionate and service oriented validator. We are long term trusted community members; and have received delegation from both Tendermint and the Interchain Foundation (ICF) as a reward for our continuous support and effort."
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1grllakrqz8z65u6phzpewqgu3vt5rq3usm5k7e",
+          "validator_address": "tkivaloper1grllakrqz8z65u6phzpewqgu3vt5rq3urmu4p6",
+          "pubkey": "tkivalconspub1zcjduepqsudw0w73u0t3v8d00dg5hadv54wx8thtwfv8j8lkp7z6alsx5cnqmvu56d",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A3kvye7nEKy5rfLGmCYiiI+MEepMym3RiSpyktBiIb8S"
+        },
+        "signature": "c48Vgn7K5LfX+dvzWNcdXrtb6yRYHhZs8tCGuOUWtL04Q+juuCmp+JHY63dWW1nlkO9JqLmf/qy1svfFuA4RIw=="
+      }
+    ],
+    "memo": "def7d7f625df5f1779cfcb2495426da8adfa59e8@45.72.100.116:26656"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Egor89",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki13qxln0z63fshywhm955y5rxvqgt3du7p6wj554",
+          "validator_address": "tkivaloper13qxln0z63fshywhm955y5rxvqgt3du7pfw6htk",
+          "pubkey": "tkivalconspub1zcjduepqgxq5apyu94mjec3y4kxtxxncs5a9k7j5xtpemgemqzsmmhxw2l5s9g2jue",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AxrzFNuhwC1QPK5qno0WSw7hZrrUtDOg9uixJH23cUrA"
+        },
+        "signature": "pKVmjmKAHYZBGbvqSSGGSHQPVNz9ZdxQTwfOltdwNvZ+0udt6DY/k4kcKQqEkzTD+CpGlO3xR+kEXlyj0N4YZQ=="
+      }
+    ],
+    "memo": "14e8696b33b3bae9fd18b62e43e149157659c0de@95.217.6.242:26656"
+  }
+}

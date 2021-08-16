@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "chocolate",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki17fznh74zefd80jklvqgecaqfxu7uc6jrqtv6pq",
+          "validator_address": "tkivaloper17fznh74zefd80jklvqgecaqfxu7uc6jrntye7r",
+          "pubkey": "tkivalconspub1zcjduepqn9sqmspk7a8hdvrkdur4w9tknqpzsjmrggg9p2gj3652s20ez2kqsfkqk7",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Akr/p+ldeoiznBy0+kpQiXKbL3XO7mn94E3C5BE3t9d2"
+        },
+        "signature": "kJ2vb6mS64Wdg8acxG+pcQiRFIeHpA4tFXi4CWQ6SvA3unJkJ2csrAmVMmD8e1geC1fW5yTXh6aQxmfTbr3cbg=="
+      }
+    ],
+    "memo": "5bcb79b6defe5595db8bbe8eb410280d5a0fe320@162.55.59.10:26656"
+  }
+}

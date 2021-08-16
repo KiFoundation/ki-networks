@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "NodesGuru",
+            "identity": "28B672FCE6BBD562",
+            "website": "https://nodes.guru",
+            "details": "Nodes Guru contains a full list with guides for testnet for all projects in crypto world."
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1mdsh87xhc73nkrmhxrkajc4s32ere33nk8rgfd",
+          "validator_address": "tkivaloper1mdsh87xhc73nkrmhxrkajc4s32ere33n98ttkw",
+          "pubkey": "tkivalconspub1zcjduepqsus4rs4c6jdfgpvymjrd8s5ksd0qwjaw2xq2h4e2pnklzsdum4hqw8ag8f",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "ArXvddaLY3rUty868j5BjtdDJNu2Y/x09a7ka0ma5zbe"
+        },
+        "signature": "VwAjvlP/eo4O7yPVUQZ5zz5DY8FuXC/E4u/bW3t33xkf7/PJ6gG+SfZE8YzgFRexZWidzcno3YDKq7EQWsvjtw=="
+      }
+    ],
+    "memo": "0e7b398223261c22cd6877b785e09d66aa4f5071@95.111.248.200:26656"
+  }
+}

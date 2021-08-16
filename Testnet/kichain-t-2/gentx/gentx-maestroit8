@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "MaestroIt8",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1kwc5az2gh0kgfyh0pvcvu7jvgxwes8urm3fq0z",
+          "validator_address": "tkivaloper1kwc5az2gh0kgfyh0pvcvu7jvgxwes8urg3prsp",
+          "pubkey": "tkivalconspub1zcjduepqya2p9e7w73q9hf03qshk8g69j9nv9pqspe4zaa9yzvrxw5ety3tskeuw8w",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AhJdQoCUrj7YUo014J45IJdIDAmP0Tgj7q2IpbVzaGgc"
+        },
+        "signature": "/3UqDblACV2oO3xunhDaZ1+YpkywzQJMvGBglzZr1UhLnt8AwwBCp7ktZnv5MIqdgnjgeEYQhjQaN860+cJNYg=="
+      }
+    ],
+    "memo": "8c92d11739cd8796af03735cc4b526667692afb5@173.212.221.225:26656"
+  }
+}

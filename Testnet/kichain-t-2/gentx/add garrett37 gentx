@@ -1,0 +1,41 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [{
+      "type": "cosmos-sdk/MsgCreateValidator",
+      "value": {
+        "description": {
+          "moniker": "garrett37",
+          "identity": "",
+          "website": "",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "tki1mquulvkjpxpymve9wp30h00hts45wkt97hmvwl",
+        "validator_address": "tkivaloper1mquulvkjpxpymve9wp30h00hts45wkt9dhn03u",
+        "pubkey": "tkivalconspub1zcjduepqq3393ypzqe0f2uw6760yq4u7n7e4235htekkk64pqvg3elxglg5sktgl37",
+        "value": {
+          "denom": "utki",
+          "amount": "100000000"
+        }
+      }
+    }],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [{
+      "pub_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "ArSvKMhFiXd6qIUiImUUsp6jBhh2yrTsgl07PfS/VhrD"
+      },
+      "signature": "Nl6AHF+jet8qC8Jyape0E01OVlozOGasA2d1V2Ipa9t9d4WbFy7Q/x7z5LddiDLRxN1qnetHcDebcVrbOr7oUw=="
+    }],
+    "memo": "f7dd82ef7387ddb3c2785b5ca645203fb71dccb6@194.163.150.240:26656"
+  }
+}

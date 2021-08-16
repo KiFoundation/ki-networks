@@ -1,0 +1,45 @@
+{
+	"type": "cosmos-sdk/StdTx",
+	"value": {
+		"msg": [
+			{
+				"type": "cosmos-sdk/MsgCreateValidator",
+				"value": {
+					"description": {
+						"moniker": "RINO",
+						"identity": "",
+						"website": "",
+						"details": ""
+					},
+					"commission": {
+						"rate": "0.100000000000000000",
+						"max_rate": "0.100000000000000000",
+						"max_change_rate": "0.100000000000000000"
+					},
+					"min_self_delegation": "1",
+					"delegator_address": "tki1w45mujvfm769a4pq5x2v290mxfzx2tzcredcya",
+					"validator_address": "tkivaloper1w45mujvfm769a4pq5x2v290mxfzx2tzcse9mm7",
+					"pubkey": "tkivalconspub1zcjduepqtxut9elzppxcs4fzsuqj8stt3vhclq38mkazjqpsakxs5fhrwrzsg6nv74",
+					"value": {
+						"denom": "utki",
+						"amount": "100000000"
+					}
+				}
+			}
+		],
+		"fee": {
+			"amount": [],
+			"gas": "200000"
+		},
+		"signatures": [
+			{
+				"pub_key": {
+					"type": "tendermint/PubKeySecp256k1",
+					"value": "AuZfFOowTpSyb1AUAWLGYufzFdT08JvQa7QNR/88t150"
+				},
+				"signature": "bgEzPMfKEbgpR/7plrmOWP4aULW5PRQg7mt7ET81zuAg8/NiawT8FOGvIA9DHHhPA747mVEgcypBZUgVPZMy2w=="
+			}
+		],
+		"memo": "26b6a65ac97c484a7524aee40fa948dd4192ae4e@95.216.155.191:26656"
+	}
+}

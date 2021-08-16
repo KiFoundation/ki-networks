@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "TEOLIDER",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1la0mwrckwp8jpyj3nwajp8vaj0y366w4zjh8kd",
+          "validator_address": "tkivaloper1la0mwrckwp8jpyj3nwajp8vaj0y366w43jlyfw",
+          "pubkey": "tkivalconspub1zcjduepqcfllc7j2wt2ht09qqmr6n45n8khh8g3dlajtr4qrz28nxx44afrskselam",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AghSIqR6CrxYpldEtDhRE515PpwFTtJnFtfeEwwm0gQQ"
+        },
+        "signature": "dRNXDTfQ6OfhdSgFoMb6vAvdr2ZCy3M+MZbsltXbUO9yTaMUGl6axVvgchOueqzQJjKJCHV3cAs14GsRgBbjnA=="
+      }
+    ],
+    "memo": "1a5802568eeb6af8b937054e57a803aacae1dcfb@116.203.61.156:26656"
+  }
+}

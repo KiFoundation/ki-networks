@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "outerspace",
+            "identity": "54749626C6F3C91B",
+            "website": "https://cryptostake.online/",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1jyvn3m8ap368vm4umjxud6rcmewt83g4f4nm9f",
+          "validator_address": "tkivaloper1jyvn3m8ap368vm4umjxud6rcmewt83g464mc62",
+          "pubkey": "tkivalconspub1zcjduepqr3cvp7hyramh4n088hftrm7f5scasdu8kgvqzzjkeclj4n32c8zqpyjcya",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Aw2y/WanDnDLsduJ4HDuIi/C75N8h0e8TwAjvhl467o4"
+        },
+        "signature": "aZ6ogIGoGNLILC3jyvIvZ5COSp8gXHvOdmjO1veXTjI2I8ZQJOwZkQhf+nry/zQM3uokFSPkRIPVv9u9LuGbeA=="
+      }
+    ],
+    "memo": "bbe6e1b4ec1772285cc603d76efb7a1b9ba7b368@88.99.57.4:26656"
+  }
+}

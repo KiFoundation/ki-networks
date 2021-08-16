@@ -1,0 +1,47 @@
+{
+  "type":"cosmos-sdk/StdTx",
+  "value":{
+    "msg":[
+      {
+        "type":"cosmos-sdk/MsgCreateValidator",
+        "value":{
+          "description":{
+            "moniker":"eliottvincent",
+            "identity":"",
+            "website":"",
+            "details":""
+          },
+          "commission":{
+            "rate":"0.100000000000000000",
+            "max_rate":"0.100000000000000000",
+            "max_change_rate":"0.100000000000000000"
+          },
+          "min_self_delegation":"1",
+          "delegator_address":"tki19d3wqy8vrhldzxfrelr63y5aagg7t7w6q3vx3e",
+          "validator_address":"tkivaloper19d3wqy8vrhldzxfrelr63y5aagg7t7w6n3y9w6",
+          "pubkey":"tkivalconspub1zcjduepqnz6eteent86ua99q7xlueyjzvlt79hzqvmmxm4jxuna9ju7sp79qvjar44",
+          "value":{
+            "denom":"utki",
+            "amount":"100000000"
+          }
+        }
+      }
+    ],
+    "fee":{
+      "amount":[
+        
+      ],
+      "gas":"200000"
+    },
+    "signatures":[
+      {
+        "pub_key":{
+          "type":"tendermint/PubKeySecp256k1",
+          "value":"A/69i+CU5XpoSC0N+1mzBeHt010tmWX4v/T0UQHC5ATy"
+        },
+        "signature":"aZ6Ewn/ZKl0lxyA3/Sy2eWeR/8F+i+9zoz+gAIUzPP0qlbDgnUYMN8lNSfXNLoLLBycZJWudS0M2VyVEi8N5mg=="
+      }
+    ],
+    "memo":"47813ba5da34563f45e0e5897a6a5f99cd79a040@172.31.32.242:26656"
+  }
+}

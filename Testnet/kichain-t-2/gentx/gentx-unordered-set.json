@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "stromsund",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki162vtu5hu40kmemk09eh7wx40cqycc5w0qsf4ju",
+          "validator_address": "tkivaloper162vtu5hu40kmemk09eh7wx40cqycc5w0nspkdl",
+          "pubkey": "tkivalconspub1zcjduepqym6eq2ad5s5t9wwpza37cn845hm0svd4awu53gs80phkadp2qkys3zzrgd",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Ajurzuh01bJd9KT2HttfYo86qjmlNHawycPYnm6S80kK"
+        },
+        "signature": "IMjwtnQ7fZkM4oIzW5C00hTBLtk9D7QoqOtL+pNkLcNqY8eNGOSNwBoN8oC2eP3C05Rju+0DMhr4loe1aSUvFw=="
+      }
+    ],
+    "memo": "1b6d67b4cff4dff68a88fdf94c3fe6c2e61bbf27@157.90.130.43:26656"
+  }
+}

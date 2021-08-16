@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+	"msg": [
+	  {
+		"type": "cosmos-sdk/MsgCreateValidator",
+		"value": {
+		  "description": {
+			"moniker": "Sanlut",
+			"identity": "",
+			"website": "",
+			"details": ""
+		  },
+		  "commission": {
+			"rate": "0.100000000000000000",
+			"max_rate": "0.100000000000000000",
+			"max_change_rate": "0.100000000000000000"
+		  },
+		  "min_self_delegation": "1",
+		  "delegator_address": "tki1dutvfsrh3nstp0xy6lp7yggz22wjc6kuhen98h",
+		  "validator_address": "tkivaloper1dutvfsrh3nstp0xy6lp7yggz22wjc6kuyemxc5",
+		  "pubkey": "tkivalconspub1zcjduepqv2xgf389wzrfe8xwsfazy6e0jxwdqprl5etyxcphrywnmne9dccsqg4av2",
+		  "value": {
+			"denom": "utki",
+			"amount": "100000000"
+		  }
+		}
+	  }
+	],
+	"fee": {
+	  "amount": [],
+	  "gas": "200000"
+	},
+	"signatures": [
+	  {
+		"pub_key": {
+		  "type": "tendermint/PubKeySecp256k1",
+		  "value": "A2UMWrU+KMX/swWCZi/9JIX30LYOk0sGWz8o3GoWrt7B"
+		},
+		"signature": "jFfot5AFfViPvrK7w5axlmqXKxCTJVdp12BPhM0jDi9a1HZoTX6dH3Xgx0oDFvoYvAu7z71ZiGwRE8M/KBaRjA=="
+	  }
+	],
+	"memo": "4226ce46bcef2101a7c4e6d945dfd27a423e3440@78.46.250.232:26656"
+  }
+}

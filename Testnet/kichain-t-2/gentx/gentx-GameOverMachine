@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "GameOverMachine",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1tnmva0jun8aa8y3hjl746vwyhqy8c5rmsjn3xt",
+          "validator_address": "tkivaloper1tnmva0jun8aa8y3hjl746vwyhqy8c5rmrjmjeg",
+          "pubkey": "tkivalconspub1zcjduepqacdc4fmzqc9r5d7f3f3dnjr09f8jy5r8dtmfhuhd75egy2gex84ql3ue2h",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Ar9aDOaRNIhzCUenrs1/cWpouH0yQ1H470GxFexOS8+a"
+        },
+        "signature": "la9OLxze0LOzWdsEV0jyVO/gWR2W1v2GmEbJzb52Vr0xIE8tNMmyAg1lygSUrbogHpMbaLYCT0T3ca/L1cMGDA=="
+      }
+    ],
+    "memo": "66b2f833f509b7cbee7db5aa65391ce974c3a19d@10.128.0.2:26656"
+  }
+}

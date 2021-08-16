@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "CryptoQwest",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1c4zqktms4n3unda4v3f0m3xu6njzmmx3ce4hh6",
+          "validator_address": "tkivaloper1c4zqktms4n3unda4v3f0m3xu6njzmmx3tea5ge",
+          "pubkey": "tkivalconspub1zcjduepqtq45p74e5qy9p3e22peel3nr0zlt02m99vatke3u5f743ymwqmnqnuxaye",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Ah8hBMPCKSIIXD9HhDIpbJDs+nYVQF/9KnmdJmJUspT3"
+        },
+        "signature": "W585Y1+mmeNEPa91pTgBhJ4+qLuAc1q3+GGngkaafnR+0MurlgWFqZeEgYrerlFMAXrwQXivWy3ZiD5/WGoUrQ=="
+      }
+    ],
+    "memo": "a2620026e9df53c4a5dcdfc47223d6ef6f07e324@85.114.142.151:26656"
+  }
+}

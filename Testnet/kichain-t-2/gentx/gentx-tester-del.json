@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "tester-del-node",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1axuctyj3ck0pfa354z0lwwep7sl7lt9t7lfx6w",
+          "validator_address": "tkivaloper1axuctyj3ck0pfa354z0lwwep7sl7lt9tdlp99d",
+          "pubkey": "tkivalconspub1zcjduepqtknkj4cckkutqg5t9yftd9khgjz6akegp9ddtylma3jm449azp6sscj7jp",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AiF89ViDVqsD+vsOM62pGRhoSRUivA6DoViEhxXERxb6"
+        },
+        "signature": "U/h/PMoA6AI3KQ1zw7cgfsQPuA79cC94BQzjKP3LzadtMrKAc9vyGuMWSenbgZS419HuycdTRbHfXGcsCBz/4g=="
+      }
+    ],
+    "memo": "3b72a54706720c5228a475f9c5075a8a802a6dd9@142.4.216.69:26656"
+  }
+}

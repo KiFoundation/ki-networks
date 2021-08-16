@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "Blockchain_Capital",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki14yc0s2pg6kj9h8hccdwjsw79dsclc2ktrtt85m",
+          "validator_address": "tkivaloper14yc0s2pg6kj9h8hccdwjsw79dsclc2ktstrytc",
+          "pubkey": "tkivalconspub1zcjduepqwasvmrmt905nqhavnsg2j7vwl4dauz9g2ekfzpxdswa3jw0qc8ksz5z6gc",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A/2ZtfRoGqvL5SL7Neh5XO6mXhPI71MeXEOD23d7Ws4A"
+        },
+        "signature": "uDeXmuMVvm9RGUI168L5Zy0E6ut6FlwTUG9EPwlQIUxdTgxlNiR8gEWJiXfQh1f8JqQX9IQ50Vu4Vo97Ps5Caw=="
+      }
+    ],
+    "memo": "3d260af620284736822eb4fac177bdc5f1e1f758@94.250.249.192:26656"
+  }
+}

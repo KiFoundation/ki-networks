@@ -1,0 +1,9 @@
+{"type":"cosmos-sdk/StdTx","value":{"msg":[{"type":"cosmos-sdk/MsgCreateValidator","value":{"description":{"moniker
+":"sashakaralchuk_kichain_nodename","identity":"","website":"","details":""},"commission":{"rate":"0.10000000000000
+0000","max_rate":"0.100000000000000000","max_change_rate":"0.100000000000000000"},"min_self_delegation":"1","delega
+tor_address":"tki19xkwjrmavtaejjuquf6sxvj9c4we0qjn5paj3l","validator_address":"tkivaloper19xkwjrmavtaejjuquf6sxvj9c
+4we0qjn8p43wu","pubkey":"tkivalconspub1zcjduepqrh85vdg6lh5gl0d8c7h4l9anx8fmt0mx2rqnap3qyvktme4gelysusl548","value":
+{"denom":"utki","amount":"100000000"}}}],"fee":{"amount":[],"gas":"200000"},"signatures":[{"pub_key":{"type":"tende
+rmint/PubKeySecp256k1","value":"Al9+MxcuHcn5RDhXunrBF+QI9ITFVZ/hmHd9CqC1bQYI"},"signature":"isDUwBRxk3qx7q+G/VIbMyp
+6eyywL7vYuMPECuK0quMhuG59NEVDuIlZNQ8FsPxu9fmiWpmh+HaeT7+ijvKhgA=="}],"memo":"6b81cc868753a46cac0e6347236a6c87d7edcf
+b9@10.164.0.2:26656"}}

@@ -18,8 +18,8 @@
           },
           "min_self_delegation": "1",
           "delegator_address": "tki1eud0qj36gx0y6exv3499j5u80sc48gt2cl69tm",
-          "validator_address": "tkivaloper1eud0qj36gx0y6exv3499j5u80sc48gt2tljx5                                                                                                                                                             c",
-          "pubkey": "tkivalconspub1zcjduepqfzt36ha5hlfjppesx88ck2qu47eyjljl7j6jx                                                                                                                                                             s56yq0v4zyvsd3sakg8cc",
+          "validator_address": "tkivaloper1eud0qj36gx0y6exv3499j5u80sc48gt2tljx5c"                                                                                                                                                             c",
+          "pubkey": "tkivalconspub1zcjduepqfzt36ha5hlfjppesx88ck2qu47eyjljl7j6jxs56yq0v4zyvsd3sakg8cc"                                                                                                                                                             s56yq0v4zyvsd3sakg8cc",
           "value": {
             "denom": "utki",
             "amount": "100000000"

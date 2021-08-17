@@ -19,8 +19,10 @@ This guide assumes that you have followed the step from our [tutorial](https://g
 To download the Genesis:
 ```
 curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-2/genesis.json > ./kid/config/genesis.json
+```
+```
 sha256sum ./kid/config/genesis.json
-# TODO HASH
+ae0e4eeb6aebb0bcb0356279d851b2ddd5631a678045da1d2cd0592146d6f1b6  ./kid/config/genesis.json
 ```
 
 You can find persistent peers (and add your own if you want) in [this file](./peer-nodes.txt)

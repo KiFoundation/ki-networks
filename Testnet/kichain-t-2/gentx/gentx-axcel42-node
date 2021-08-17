@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "axcel42-node",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1qm3uw2dluhfajjdwrpxq76zdv04yygqpdrvunh",
+          "validator_address": "tkivaloper1qm3uw2dluhfajjdwrpxq76zdv04yygqp7rylv5",
+          "pubkey": "tkivalconspub1zcjduepqjqumw0wd8tpy7efc2mf6xamflwl3wgx6vgjkw0yxpw4kvltjz8aqsskufd",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AvABduTXbl+WaQotOqhIvBfNouZHp6m1XunlxcIlHXpF"
+        },
+        "signature": "zXF9q9bILZAg4+X7boSRL/terp6BAy5buFvDyM0ULqoGxvrkzdODUJGQlIn+mI4CL3hEtkSTXs/qjyLO7peWSg=="
+      }
+    ],
+    "memo": "14b42271c4aeb5af230175d0c8eafa0a7c6d4ec7@212.68.160.180:26656"
+  }
+}

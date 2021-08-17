@@ -8,7 +8,7 @@ This guide will provide instructions to setup your validator for the testnet cha
 ## TLDR
 
 On this repository, you can find:
-- [the genesis file](./genesis.json) (hash: `TODO HASH`)
+- [the genesis file](./genesis.json) (hash: `ae0e4eeb6aebb0bcb0356279d851b2ddd5631a678045da1d2cd0592146d6f1b6`)
 - [peers](./peer-nodes.txt)
 - [seeds](./seed-nodes.txt)
 

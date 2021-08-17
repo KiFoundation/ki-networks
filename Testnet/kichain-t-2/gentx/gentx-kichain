@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "kichain",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1eud0qj36gx0y6exv3499j5u80sc48gt2cl69tm",
+          "validator_address": "tkivaloper1eud0qj36gx0y6exv3499j5u80sc48gt2tljx5                                                                                                                                                             c",
+          "pubkey": "tkivalconspub1zcjduepqfzt36ha5hlfjppesx88ck2qu47eyjljl7j6jx                                                                                                                                                             s56yq0v4zyvsd3sakg8cc",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A3h6mp2921P8mc+YNwuzB/u+o98g+Z9eSMLecUpzEL1u"
+        },
+        "signature": "eUQL9k0zRTna3LouBKOAvF9ie5SkI/ZKexse3ZxXRl8yoBKvocFvbFDfPW                                                                                                                                                             PydnKh3yshY5cOROuIYlktglGLGQ=="
+      }
+    ],
+    "memo": "568a60f3dd73152b88c3bb063ebddfe5e867aef8@192.168.0.18:26656"
+  }
+}

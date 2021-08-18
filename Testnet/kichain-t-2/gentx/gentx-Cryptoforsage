@@ -1,0 +1,45 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+        "msg": [
+            {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                    "description": {
+                        "moniker": "Cryptoforsage",
+                        "identity": "",
+                        "website": "",
+                        "details": ""
+                    },
+                    "commission": {
+                        "rate": "0.100000000000000000",
+                        "max_rate": "0.100000000000000000",
+                        "max_change_rate": "0.100000000000000000"
+                    },
+                    "min_self_delegation": "1",
+                    "delegator_address": "tki1fumv2g3as7v0yqssgpy0ktnhp3v7qxgsuaupyf",
+                    "validator_address": "tkivaloper1fumv2g3as7v0yqssgpy0ktnhp3v7qxgs0a5zm2",
+                    "pubkey": "tkivalconspub1zcjduepqnf0ekfqdkyne8kvhefx03l035hpute8d405py2gxhets0gy3l0gqeajsy6",
+                    "value": {
+                        "denom": "utki",
+                        "amount": "100000000"
+                    }
+                }
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas": "200000"
+        },
+        "signatures": [
+            {
+                "pub_key": {
+                    "type": "tendermint/PubKeySecp256k1",
+                    "value": "A/VwrY4f3s6OidZQyrg/bnK6svbCdMnQERwxz9B/XJQr"
+                },
+                "signature": "kkTBFwMZ9eZ+MzShPcR/OWvS7Mb874JBiApA0UPLFkV9YdyN9i3hIFOxVMVnbqYywGF02FbtdKy8jiXmXHzuAQ=="
+            }
+        ],
+        "memo": "f468b066e1a23b6828933cfa6a2e2061f1fc3d21@75.119.141.110:26656"
+    }
+}

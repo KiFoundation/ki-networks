@@ -92,7 +92,7 @@ kicli tx staking create-validator \
             --amount=5000000utki \
             --pubkey `kid tendermint show-validator --home ./kid/` \
             --moniker=<YOUR VALIDATOR NAME> \
-            --chain-id=kichain-1 \
+            --chain-id=kichain-t-2 \
             --gas-prices=0.025utki \
             --from=<wallet-name> \
             --home ./kicli/

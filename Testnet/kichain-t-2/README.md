@@ -1,10 +1,5 @@
 # kichain-t-2
 
-Thank you for submitting a gentx!
-This guide will provide instructions to setup your validator for the testnet challenge.
-
-**Please have your validator up and ready by August 18 2021, at 13:00 UTC.**
-
 ## TLDR
 
 On this repository, you can find:
@@ -12,15 +7,19 @@ On this repository, you can find:
 - [peers](./peer-nodes.txt)
 - [seeds](./seed-nodes.txt)
 
-## Start your node
+## Start your node (Validators registered in genesis)
+Thank you for submitting a gentx!
+This guide will provide instructions to setup your validator for the testnet challenge.
+
+**Please have your validator up and ready by August 18 2021, at 13:00 UTC.**
 
 This guide assumes that you have followed the step from our [tutorial](https://github.com/KiFoundation/ki-testnet-challenge/blob/main/tutorials/gentx.md). Otherwise, please adapt commands according to your setup.
 
 To download the Genesis:
-```
+```bash
 curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-2/genesis.json > ./kid/config/genesis.json
 ```
-```
+```bash
 sha256sum ./kid/config/genesis.json
 ae0e4eeb6aebb0bcb0356279d851b2ddd5631a678045da1d2cd0592146d6f1b6  ./kid/config/genesis.json
 ```
@@ -28,8 +27,65 @@ ae0e4eeb6aebb0bcb0356279d851b2ddd5631a678045da1d2cd0592146d6f1b6  ./kid/config/g
 You can find persistent peers (and add your own if you want) in [this file](./peer-nodes.txt)
 
 To launch your node:
-```
+```bash
 kid start --home ./kid/ &> ./kilogs/ki-node.log &
 ```
 
 If you need any help, please ask on Discord
+
+## Start your node (Validators joining after genesis time)
+Note: If you have already tried to join the testnet in genesis, you can use the created setup. Please start with step 4.
+
+1. Install `Go` and `ki-tools` and create the node directories as shown in this [tutorial](https://github.com/KiFoundation/ki-testnet-challenge/blob/main/tutorials/gentx.md).
+
+2. Initiate the node files:
+
+```bash
+kid unsafe-reset-all --home ./kid
+```
+
+3. Create the validator account. Do not forget to save the mnemonic.
+
+```bash
+kicli keys add <wallet-name> --home ./kicli/
+```
+
+4. Share the address of the created validator wallet with us. We will feed your wallet with some tokens **after** launch.
+
+5. Download the Genesis:
+
+```bash
+curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-2/genesis.json > ./kid/config/genesis.json
+```
+```bash
+sha256sum ./kid/config/genesis.json
+ae0e4eeb6aebb0bcb0356279d851b2ddd5631a678045da1d2cd0592146d6f1b6  ./kid/config/genesis.json
+```
+
+You can find persistent peers in [this file](./peer-nodes.txt)
+
+**The following needs to be done after the chain launch**
+
+6. Start your node:
+
+```bash
+kid start --home ./kid/ &> ./kilogs/ki-node.log &
+```
+
+Note : You will need to wait for the end of the synchronization process before proceeding to the validator creation.
+7. Create you validator:
+
+```bash
+kicli tx staking create-validator \
+            --commission-max-change-rate=0.1 \
+            --commission-max-rate=0.1 \
+            --commission-rate=0.1 \
+            --min-self-delegation=1 \
+            --amount=5000000utki \
+            --pubkey `kid tendermint show-validator --home ./kid/` \
+            --moniker=<YOUR VALIDATOR NAME> \
+            --chain-id=kichain-1 \
+            --gas-prices=0.025utki \
+            --from=<wallet-name> \
+            --home ./kicli/
+```

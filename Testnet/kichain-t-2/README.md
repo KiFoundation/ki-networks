@@ -50,7 +50,7 @@ kid unsafe-reset-all --home ./kid
 kicli keys add <wallet-name> --home ./kicli/
 ```
 
-4. Share the address of the created validator wallet with us. We will feed your wallet with some tokens **after** launch.
+4. Share the address of the created validator wallet on Discord (#testnet-challenge channel) to get some tokens to create your validator. Other users or team members will be able to send you few TKIs **after** the launch.
 
 5. Download the Genesis:
 

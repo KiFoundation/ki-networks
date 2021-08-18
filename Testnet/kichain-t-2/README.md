@@ -81,6 +81,7 @@ kid start --home ./kid/ &> ./kilogs/ki-node.log &
 ```
 
 Note : You will need to wait for the end of the synchronization process before proceeding to the validator creation.
+
 7. Create you validator:
 
 ```bash

@@ -38,8 +38,6 @@ To launch your node:
 ```bash
 kid start --home ./kid/ &> ./kilogs/ki-node.log &
 ```
-kid start --home ./kid/ &> ./kilogs/ki-node.log &
-```
 
 If you need any help, please ask on Discord
 
@@ -100,6 +98,7 @@ kicli tx staking create-validator \
             --home ./kicli/
 ```
 
+## Additional tips
 To launch your node using a service file:
 ```bash
 sudo tee /etc/systemd/system/kichaind.service > /dev/null <<EOF

@@ -1,0 +1,45 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "salexber",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.100000000000000000",
+            "max_change_rate": "0.100000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "tki1mdq9uvkj660wehmdjd0y4jylnfml20w7ey3w90",
+          "validator_address": "tkivaloper1mdq9uvkj660wehmdjd0y4jylnfml20w72yed6                v",
+          "pubkey": "tkivalconspub1zcjduepq3n4j3elchyadgeqmdy2gg3e5gkzad77j2xydp                ed0t5dcqeu53q2s7svl8a",
+          "value": {
+            "denom": "utki",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A647zOHElGfQzrRVx5RXBezm1vEq+BDH7x6dYr2IflNs"
+        },
+        "signature": "doC7mNHvHvfCnxoVYWUFiVa4CfIsO8YMvLX60JwbD/w07JPaOIngar4WDf                Ib4EbyL7CMFtBqkQGrFjI4zxV/yA=="
+      }
+    ],
+    "memo": "125b3db0a65b154930c47aab8fc52ed830ca3fbd@10.0.0.172:26656"
+  }
+}

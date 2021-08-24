@@ -1,4 +1,4 @@
-# kichain-t-2
+# kichain-t-2 Upgrade
 
 The upgrade from `kichain-t-2` to `kichain-t-3` is set to happen at height 64800 which at current block time should be reached on the Wednesday the 25th of August between 10H30 and 11H30 UTC.
 

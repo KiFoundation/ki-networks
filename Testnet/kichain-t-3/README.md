@@ -12,7 +12,7 @@ This guide assumes that you have followed the step from our [tutorial](https://g
 
 In `./kid/config/app.toml` set the `halt-height` variable to `64800`.
 ```
-halt-height = 20
+halt-height = 64800
 ```
 
 Restart your node. If you are using a service, it suffices to restart it. Otherwise, this can be done by fetching the process ID of your running kid process:
@@ -72,7 +72,7 @@ halt-height=64800
 
 Other wise kill the process manually after the halt height is reached.
 
-⚠️ Before you proceed ensure the node has halted!
+⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service. 
 
 Backup the chain data and config directory  
 

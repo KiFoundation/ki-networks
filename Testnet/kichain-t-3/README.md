@@ -1,6 +1,6 @@
 # kichain-t-2 Upgrade
 
-The upgrade from `kichain-t-2` to `kichain-t-3` is set to happen at height 64800 which at current block time should be reached on the Wednesday the 25th of August between 10H30 and 11H30 UTC.
+The upgrade from `kichain-t-2` to `kichain-t-3` is set to happen at height 64800 which at current block time should be reached on Wednesday the 25th of August between 10H30 and 11H30 UTC.
 
 ## How to upgrade your node
 This guide will provide instructions to upgrade your validator node as part of the `kichain-t-3` upgrade.
@@ -8,7 +8,7 @@ This guide will provide instructions to upgrade your validator node as part of t
 This guide assumes that you have followed the step from our [tutorial](https://github.com/KiFoundation/ki-testnet-challenge/blob/main/tutorials/gentx.md) and that you are located in your node root directory. Otherwise, please adapt commands according to your setup.
 
 ### Set the halt-height
-**Please perform this step need to before the upgrade window**
+**Please perform this step before the upgrade window**
 
 In `./kid/config/app.toml` set the `halt-height` variable to `64800`.
 ```
@@ -26,7 +26,7 @@ which will output:
 1234 pts/1    Sl     0:04 kid start --home kid/
 24512 pts/1    S+     0:00 grep kid
 ```
-in our case the process id is `1234`. You need to kill it as follows:
+in our case the process ID is `1234`. You need to kill it as follows:
 
 ```bash
 kill 1234
@@ -38,7 +38,7 @@ kid start --home ./kid/ &> ./kilogs/ki-node.log &
 ```
 
 
-##
+## Client upgrade
 **Please be ready during the upgrade window. These steps should be performed after the node has stoped**
 
 Check your current ki-tools version
@@ -83,7 +83,7 @@ cp -r ./kid ./kid-backup
 Export the blockchain state
 
 ```bash
-kid export --height=200 --home kid > kichain-t-2_genesis_export.json
+kid export --height=64800 --home ./kid > kichain-t-2_genesis_export.json
 ```
 
 Verify the SHA256 of the (sorted) exported genesis file:
@@ -133,7 +133,7 @@ build_deps:
 ....
 ```
 
-Migrate exported state from the old version to the new v4.0.2 version:
+Migrate exported state from the old version to the new version:
 
 ```bash
 kid migrate kichain-t-2_genesis_export.json --chain-id=kichain-t-3 --initial-height 64801 > genesis.json
@@ -187,6 +187,7 @@ The wallet keys you've created before the upgrade are not migrated automatically
 ```bash
 kid keys migrate kicli/  --keyring-backend os  --home kid
 ```
+You will be asked to enter a valid passphrase for each key in your store one by one until all keys are migrated.
 
 ## Security
 If you discover a security vulnerability in this project, please report it to security@foundation.ki. We will promptly address all security vulnerabilities.

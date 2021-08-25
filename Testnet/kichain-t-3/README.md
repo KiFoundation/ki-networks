@@ -72,7 +72,7 @@ halt-height=64800
 
 Other wise kill the process manually after the halt height is reached.
 
-⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service. 
+⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.
 
 Backup the chain data and config directory  
 
@@ -92,6 +92,11 @@ Verify the SHA256 of the (sorted) exported genesis file:
 jq -S -c -M '' kichain-t-2_genesis_export.json | shasum -a 256
 ```
 Post your hash to the Discord #testnet-challenge channel and cross check it with the fellow validators.
+
+The hash agreed on by the community is: 
+```bash
+875649fe148de10c717e970315d8b05b5b797506e0502c24fd706e3c739e69cc
+```
 
 
 Update Go to at least v1.16. This step depends on your setup. Once updated you can check the current version with

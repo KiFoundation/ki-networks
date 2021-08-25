@@ -95,7 +95,7 @@ Post your hash to the Discord #testnet-challenge channel and cross check it with
 
 The hash agreed on by the community is: 
 ```bash
-875649fe148de10c717e970315d8b05b5b797506e0502c24fd706e3c739e69cc
+67d4310caac32db6256430ac0290dd697ff94ab8317cea00cdd78b6612aac95d
 ```
 
 
@@ -151,6 +151,11 @@ jq -S -c -M '' genesis.json | shasum -a 256
 ```
 
 Post your hash to the Discord #testnet-challenge channel and cross check it with the fellow validators.
+
+The hash agreed on by the community is: 
+```bash
+875649fe148de10c717e970315d8b05b5b797506e0502c24fd706e3c739e69cc
+```
 
 ⚠️ Be sure you have a complete backed up state of your node before proceeding with this step.
 

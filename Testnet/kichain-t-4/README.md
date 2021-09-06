@@ -177,6 +177,19 @@ kid start --home ./kid/ &> ./kilogs/ki-node.log &
 
 The chain will start when 67% of the voting power is up. Unless your start command outputs an error, all you need to do is to wait.
 
+## Genesis hash reference
+
+### After export
+
+```
+
+```
+
+### After parameters update
+
+```
+
+```
 
 ## Security
 If you discover a security vulnerability in this project, please report it to security@foundation.ki. We will promptly address all security vulnerabilities.

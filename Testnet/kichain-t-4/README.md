@@ -41,5 +41,142 @@ kid start --home ./kid/ &> ./kilogs/ki-node.log &
 ## Upgrade steps
 **Migration steps will be released prior the upgrade**
 
+**Please be ready during the upgrade window. These steps should be performed after the node has stoped**
+
+Check your current ki-tools version
+
+```bash
+kid version --long
+```
+
+This should output
+
+```
+name: kitools
+server_name: kid
+version: testnet-ibc-e3febac1a22147073549b0042adc87d33bfa6e39-Testnet-IBC
+commit: e3febac1a22147073549b0042adc87d33bfa6e39
+build_tags: netgo,ledger
+go: go version go1.16 linux/amd64
+build_deps:
+....
+```
+
+If you have set a halt height, check halt height:
+
+```bash
+cat ./kid/config/app.toml | grep halt-height
+```
+
+This shoud output
+
+```bash
+halt-height=219800
+```
+
+Other wise kill the process manually after the halt height is reached.
+
+⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.
+
+Backup the chain data and config directory
+
+```bash
+cp -r ./kid ./kid-kichain-t-3-backup
+```
+
+Export the blockchain state
+
+```bash
+kid export --height=219800 --home ./kid > kichain-t-3_genesis_export.json
+```
+
+Verify the SHA256 of the (sorted) exported genesis file:
+
+```bash
+jq -S -c -M '' kichain-t-3_genesis_export.json | shasum -a 256
+```
+
+Update the IBC parameters:
+
+```bash
+sed -i "s/\"receive_enabled\":false/\"receive_enabled\":true/g" kichain-t-3_genesis_export.json
+sed -i "s/\"send_enabled\":false/\"send_enabled\":true/g" kichain-t-3_genesis_export.json
+```
+
+Update the governance parameters:
+
+```bash
+sed -i "s/\"voting_period\":\"1209600s\"/\"voting_period\":\"7200s\"/g" kichain-t-3_genesis_export.json
+```
+
+Update chain id
+
+```bash
+sed -i "s/\"kichain-t-3\"/\"kichain-t-4\"/g" kichain-t-3_genesis_export.json
+```
+
+Update next channel-id
+
+Find the next channel sequence (use one of the following):
+
+```bash
+prev=$(cat kichain-t-3_genesis_export.json | jq .app_state.ibc.channel_genesis.ack_sequences[] | jq 'map(split("-"))[0][1] | tonumber' | sort -n | tail -1) && next=$(($prev+1)) && echo $next
+```
+
+or
+
+```bash
+prev=$(cat kichain-t-3_genesis_export.json | jq .app_state.ibc.channel_genesis.ack_sequences[].channel_id | cut -d'-' -f2 | cut -d'"' -f1 | sort -n | tail -1) && next=$(($prev+1)) && echo $next
+```
+
+This will output an integer which you can verify by comparing it against the community findings on Discord.
+
+```bash
+sed -i "s/\"next_channel_sequence\":\"0\"/\"next_channel_sequence\":\"$next\"/g" kichain-t-3_genesis_export.json
+```
+
+```bash
+mv kichain-t-3_genesis_export.json genesis.json
+
+```
+
+Verify the SHA256 of the (sorted) exported genesis file:
+
+```bash
+jq -S -c -M '' genesis.json | shasum -a 256
+```
+
+Post your hash to the Discord #testnet-challenge channel and cross check it with the fellow validators.
+
+⚠️ Be sure you have a complete backed up state of your node before proceeding with this step.
+
+Backup your configurations
+
+```bash
+cp ./kid/config/config.toml ./kid/config/config.toml.kichain-t-3.bak
+cp ./kid/config/app.toml ./kid/config/app.toml.kichain-t-3.bak
+```
+
+Reset the node state
+
+```bash
+kid unsafe-reset-all --home ./kid
+```
+
+Copy the migrated genesis file `genesis.json` to the config folder
+
+```bash
+cp genesis.json ./kid/config/
+```
+
+Your node is now ready to be started. If you've started the node with a service you can simply start the service. Otherwise, use the following command:
+
+```bash
+kid start --home ./kid/ &> ./kilogs/ki-node.log &
+```
+
+The chain will start when 67% of the voting power is up. Unless your start command outputs an error, all you need to do is to wait.
+
+
 ## Security
 If you discover a security vulnerability in this project, please report it to security@foundation.ki. We will promptly address all security vulnerabilities.

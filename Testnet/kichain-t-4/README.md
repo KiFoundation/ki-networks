@@ -182,13 +182,13 @@ The chain will start when 67% of the voting power is up. Unless your start comma
 ### After export
 
 ```
-
+3377744f812972a82dac855e357046152905d6a407bd526b55e45b874895d817
 ```
 
 ### After parameters update
 
 ```
-
+83e8d8b9b883f1d478fb8d9f0e32c138904d0cbc30e939fa0490f988fd0b78d7
 ```
 
 ## Security

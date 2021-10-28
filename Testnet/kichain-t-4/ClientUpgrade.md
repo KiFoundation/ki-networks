@@ -121,6 +121,13 @@ cp -r ./kid ./kid-kichain-t-4-backup
 ⚠️ Be sure you have a complete backed up state of your node before proceeding with this step.
 
 
+Before you can start the node, you will need to reset the halt height set before to 0.
+In `./kid/config/app.toml` set the `halt-height` variable to `0`.
+```
+halt-height = 0
+```
+
+
 Your node is now ready to be started. If you've started the node with a service you can simply start the service. Otherwise, use the following command:
 
 ```bash

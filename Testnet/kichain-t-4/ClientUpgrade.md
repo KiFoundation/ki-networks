@@ -1,6 +1,6 @@
-# kichain-t-3 Upgrade
+# kichain-t-4 Client upgrade
 
-The upgrade of `kichain-t-4` is set to happen at height `951150` which at current block time should be reached on Monday the 28th of October between 11H and 11H30 UTC. This upgrade is stop and start client update without genesis migration.    
+The upgrade of `kichain-t-4` is set to happen at height `951150` which at current block time should be reached on Monday the **28th of October between 11H and 11H30 UTC**. This upgrade is stop and start client update without genesis migration.    
 
 ## How to upgrade your node
 This guide will provide instructions to upgrade your validator node as part of the `kichain-t-4` upgrade.

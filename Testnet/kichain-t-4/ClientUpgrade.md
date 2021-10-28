@@ -1,6 +1,6 @@
 # kichain-t-4 Client upgrade
 
-The upgrade of `kichain-t-4` is set to happen at height `951150` which at current block time should be reached on Monday the **28th of October between 11H and 11H30 UTC**. This upgrade is stop and start client update without genesis migration.    
+The upgrade of `kichain-t-4` is set to happen at height `952700` which at current block time should be reached on Monday the **28th of October between 11H and 11H30 UTC**. This upgrade is stop and start client update without genesis migration.    
 
 ## How to upgrade your node
 This guide will provide instructions to upgrade your validator node as part of the `kichain-t-4` upgrade.
@@ -10,9 +10,9 @@ This guide assumes that you have followed the step from our [tutorial](https://g
 ### Set the halt-height
 **Please perform this step before the upgrade window**
 
-In `./kid/config/app.toml` set the `halt-height` variable to `951150`.
+In `./kid/config/app.toml` set the `halt-height` variable to `952700`.
 ```
-halt-height = 951150
+halt-height = 952700
 ```
 
 Restart your node. If you are using a service, it suffices to restart it. Otherwise, this can be done by fetching the process ID of your running kid process:
@@ -50,7 +50,7 @@ cat ./kid/config/app.toml | grep halt-height
 This shoud output
 
 ```bash
-halt-height=951150
+halt-height=952700
 ```
 
 Other wise kill the process manually after the halt height is reached. You can ensure the node hs stopped using the logs or by curling the node rpc locally :

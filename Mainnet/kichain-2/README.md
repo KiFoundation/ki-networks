@@ -18,7 +18,9 @@ The upgrade process consists of 2 main steps:
 ## Set the halt-height
 **⚠️ Please perform this step before the upgrade window**
 
-To set the halt height the node need to be restarted with the `--halt-height` flag. This can be done by fetching the process ID of your running kid process:
+If you are using a service to run your node, you can set the halt height in `./kid/config/app.toml` by setting the `halt-height` variable to `6950000` and restarting your service.
+
+Otherwise, if you've followed this [tutorial](https://medium.com/ki-foundation/how-to-join-the-kichain-mainnet-5ac7160d72e3) to start your validator, the node needs to be restarted with the `--halt-height` flag. This can be done by fetching the process ID of your running kid process:
 
 ```bash
 ps ax | grep kid

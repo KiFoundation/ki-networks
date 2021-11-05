@@ -92,7 +92,7 @@ Now ensure the change has been applied correctly
 cat ./kid/config/app.toml | grep halt-height
 ```
 
-which should return should return `halt-height=0` 
+which should return `halt-height=0` 
 
 **⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.**
 

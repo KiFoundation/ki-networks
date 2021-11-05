@@ -47,7 +47,7 @@ kid start --home ./kid/ --halt-height 6950000 &> ./kilogs/ki-node.log &
 
 ## Client upgrade
 
-**⚠️ Please be ready during the upgrade window. These steps should be performed after the node has stoped**
+**⚠️ Please be ready during the upgrade window. These steps should be performed after the node has stopped**
 
 Check your current `ki-tools` version
 
@@ -83,7 +83,7 @@ Other wise kill the process manually after the halt height is reached.
 **:red_circle: If you halt height has been set in the `app.toml` file, make sure to remove it before you proceed:**
 
 ```bash
-sed -i "s/halt-height=9216800/halt-height=0/g" ./kid/config/app.toml
+sed -i "s/halt-height=6950000/halt-height=0/g" ./kid/config/app.toml
 ```
 
 **⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.**
@@ -140,11 +140,12 @@ This should output
 ```bash
 name: kitools
 server_name: kid
-version: Mainnet-IBC-main-3fbf23ed576464f613240614659733af8e929be0
+version: Mainnet-IBC-v2.0.0-3fbf23ed576464f613240614659733af8e929be0
 commit: 3fbf23ed576464f613240614659733af8e929be0
 build_tags: netgo,ledger
 go: go version go1.16 darwin/amd64
 ...
+
 ```
 
 Migrate exported state from the old version to the new version:
@@ -206,7 +207,7 @@ kid unsafe-reset-all --home ./kid
 
 If you have custom configurations, you need to manually set them in the newly created `app.toml` and `config.toml`.
 
-ℹ️ Make sure to add the provided seed and the community peers found in `seed.txt` and `peers.txt` resp.
+ℹ️ Make sure to add the provided seed and the community peers found in [`seed.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/seeds.txt) and [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/peers.txt) resp.
 
 ℹ️ Make sure to set your min-gas-price to 0.025uxki in `app.toml`.
 

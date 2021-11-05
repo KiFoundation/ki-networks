@@ -125,7 +125,7 @@ Update Ki-tools to the IBC enabled version.
 ```bash
 git clone https://github.com/KiFoundation/ki-tools.git
 cd ki-tools
-git checkout main
+git checkout -b v2.0.0 tags/2.0.0
 make install
 ```
 

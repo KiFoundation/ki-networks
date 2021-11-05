@@ -83,8 +83,16 @@ Other wise kill the process manually after the halt height is reached.
 **:red_circle: If you halt height has been set in the `app.toml` file, make sure to remove it before you proceed:**
 
 ```bash
-sed -i "s/halt-height=6950000/halt-height=0/g" ./kid/config/app.toml
+sed -i "s/halt-height\s*=\s*6950000/halt-height=0/g" ./kid/config/app.toml
 ```
+
+Now ensure the change has been applied correctly
+
+```bash
+cat ./kid/config/app.toml | grep halt-height
+```
+
+which should return should return `halt-height=0` 
 
 **⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.**
 

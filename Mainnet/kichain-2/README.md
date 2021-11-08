@@ -113,7 +113,7 @@ jq -S -c -M '' kichain-1_genesis_export.json | shasum -a 256
 The hash agreed on by the community will be shared shortly after a sufficient community consensus is reached.
 
 ```bash
-TODO: update with correct value: <HASH>
+54f0edc106ac1d12c55415370a901386f9d47b199e8433fcd5db4617959eaddc
 ```
 
 Update Go to version 1.16. This step depends on your setup. Once updated you can check the current version with

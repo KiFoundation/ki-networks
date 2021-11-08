@@ -133,7 +133,7 @@ Update Ki-tools to the IBC enabled version.
 ```bash
 git clone https://github.com/KiFoundation/ki-tools.git
 cd ki-tools
-git checkout -b v2.0.0 tags/2.0.0
+git checkout -b v2.0.1 tags/2.0.1
 make install
 ```
 
@@ -148,8 +148,8 @@ This should output
 ```bash
 name: kitools
 server_name: kid
-version: Mainnet-IBC-v2.0.0-3fbf23ed576464f613240614659733af8e929be0
-commit: 3fbf23ed576464f613240614659733af8e929be0
+version: Mainnet-IBC-v2.0.1-889c4a2ca6b228247f5cb9366c3c0c894592da27
+commit: 889c4a2ca6b228247f5cb9366c3c0c894592da27
 build_tags: netgo,ledger
 go: go version go1.16 darwin/amd64
 ...

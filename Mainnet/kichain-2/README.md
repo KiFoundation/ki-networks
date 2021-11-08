@@ -92,7 +92,7 @@ Now ensure the change has been applied correctly
 cat ./kid/config/app.toml | grep halt-height
 ```
 
-which should return `halt-height=0` 
+which should return `halt-height=0`
 
 **⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.**
 
@@ -110,10 +110,10 @@ jq -S -c -M '' kichain-1_genesis_export.json | shasum -a 256
 
 **Post your hash to the Discord #validators-private channel and cross check it with the fellow validators.**
 
-The hash agreed on by the community will be shortly after a sufficient community consensus is reached.
+The hash agreed on by the community will be shared shortly after a sufficient community consensus is reached.
 
 ```bash
-<HASH>
+TODO: update with correct value: <HASH>
 ```
 
 Update Go to version 1.16. This step depends on your setup. Once updated you can check the current version with
@@ -183,10 +183,10 @@ jq -S -c -M '' genesis.json | shasum -a 256
 
 **Post your hash to the Discord #validators-private channel and cross check it with the fellow validators.**
 
-The hash agreed on by the community will be shortly after a sufficient community consensus is reached.
+The hash agreed on by the community will be shared shortly after a sufficient community consensus is reached.
 
 ```bash
-<HASH>
+TODO: update with correct value: <HASH>
 ```
 
 Backup the chain data and config directory

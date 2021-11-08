@@ -140,7 +140,7 @@ make install
 Check ki-tools version
 
 ```bash
-kid version --long
+kid version --long --log_level info
 ```
 
 This should output

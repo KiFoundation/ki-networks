@@ -92,7 +92,7 @@ Now ensure the change has been applied correctly
 cat ./kid/config/app.toml | grep halt-height
 ```
 
-which should return `halt-height=0`
+which should return `halt-height=0` 
 
 **⚠️ Before you proceed ensure the node has halted! Beware of the automatic restart in case it is enabled in your service.**
 
@@ -195,7 +195,7 @@ Backup the chain data and config directory
 mkdir ./kid-backup
 mv ./kid/data ./kid-backup/data
 cp -R ./kid/config ./kid-backup/config
-mkdir ./kicli-backup
+
 cp -R ./kicli ./kicli-backup
 ```
 

@@ -159,7 +159,7 @@ go: go version go1.16 darwin/amd64
 Migrate exported state from the old version to the new version:
 
 ```bash
-kid migrate kichain-1_genesis_export.json --chain-id=kichain-2 --initial-height 6950001 --genesis-time "2021-11-08T14:45:337Z" > genesis.json
+kid migrate kichain-1_genesis_export.json --chain-id=kichain-2 --initial-height 6950001 --genesis-time "2021-11-08T14:45:000Z" > genesis.json
 ```
 
 The IBC transfer parameters will be changed before launch in genesis. To perform this change apply the following changes to the exported genesis file:

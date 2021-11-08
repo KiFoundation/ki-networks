@@ -186,7 +186,7 @@ jq -S -c -M '' genesis.json | shasum -a 256
 The hash agreed on by the community will be shared shortly after a sufficient community consensus is reached.
 
 ```bash
-TODO: update with correct value: <HASH>
+99855fdf89f5c697f8be2ecc587d79c77259e05d68268928797083bdaa614a80
 ```
 
 Backup the chain data and config directory

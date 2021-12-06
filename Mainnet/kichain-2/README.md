@@ -76,7 +76,7 @@ go: go version go1.16 darwin/amd64
 Create your node directory as follows:
 ```bash
 export NODE_ROOT= <location of your choice>
-mkdir -p $NODE_ROOT/kid $NODE_ROOT/kicli $NODE_ROOT/kilogs
+mkdir -p $NODE_ROOT/kid $NODE_ROOT/kilogs
 cd $NODE_ROOT
 ```
 
@@ -136,7 +136,7 @@ kid tx staking create-validator \
   --commission-rate=0.1 \
   --min-self-delegation=1 \
   --amount=1000000utki \
-  --pubkey `kid-kichain-d-1 tendermint show-validator --home ./kid/` \
+  --pubkey `kid tendermint show-validator --home ./kid/` \
   --moniker=<YOUR_MONIKER> \
   --chain-id=kichain-2 \
   --gas-prices="0.025uxki" \

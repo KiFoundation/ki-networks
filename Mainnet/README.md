@@ -3,6 +3,6 @@
 </p>
 
 # Ki Mainnet
-**Current Version :** kichain-1
+**Current Version :** kichain-2
 
-To join the KiChain Mainnet, please refer to the following [tutorial](https://medium.com/ki-foundation/how-to-join-the-kichain-mainnet-5ac7160d72e3).
+To join the KiChain Mainnet, please refer to the following [tutorial](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/README.md).

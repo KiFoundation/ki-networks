@@ -94,7 +94,7 @@ curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Mainnet/kic
 
 The hash of the genesis file can be computed as follows:
 ```bash
-sha256sum ./kid/config/genesis.json
+jq -S -c -M '' ./kid/config/genesis.json | shasum -a 256
 
 99855fdf89f5c697f8be2ecc587d79c77259e05d68268928797083bdaa614a80
 ```

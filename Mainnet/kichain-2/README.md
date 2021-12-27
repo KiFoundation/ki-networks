@@ -135,7 +135,7 @@ kid tx staking create-validator \
   --commission-max-rate=0.1 \
   --commission-rate=0.1 \
   --min-self-delegation=1 \
-  --amount=1000000utki \
+  --amount=1000000uxki \
   --pubkey `kid tendermint show-validator --home ./kid/` \
   --moniker=<YOUR_MONIKER> \
   --chain-id=kichain-2 \

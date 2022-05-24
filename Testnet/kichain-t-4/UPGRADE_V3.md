@@ -4,7 +4,7 @@
 
 # kichain-t-4 V3 Upgrade
 
-The V3 upgrade `kichain-t-4` is set to happen at height `xxx` which at current block time should be reached on `31st of May 2022` around `13H00 UTC`.
+The V3 upgrade `kichain-t-4` is set to happen at height `4351400` which at current block time should be reached on `31st of May 2022` around `13H00 UTC`.
 
 ## How to upgrade your node
 

@@ -8,7 +8,9 @@ The V3 upgrade `kichain-t-4` is set to happen at height `xxx` which at current b
 
 ## How to upgrade your node
 
-Use the [provided]() build or build the new client yourself. A full tutorial can be found in this [dedicated tutorial](https://github.com/KiFoundation/ki-tools#readme).
+Use the [provided](https://github.com/KiFoundation/ki-networks/tree/added-v3-upgrade-tutorial/Testnet/kichain-t-4) build or build the new client yourself. A full how-to can be found in this [dedicated tutorial](https://github.com/KiFoundation/ki-tools#readme).
+
+We provide static binary releases with verifiable checksums. Never trust, always verify, so we encourage validators to build these binaries themselves using our dedicated tutorial and check the resulting checksum.
 
 The client version should be:
 ```bash
@@ -26,16 +28,19 @@ kid version --long
 To upgrade your node using Cosmovisor you need to follow these steps:
 
 ```bash
-mkdir -p <NODE_HOME>/cosmovisor/upgrades/v3/bin && cp $HOME/go/bin/junod <NODE_HOME>/cosmovisor/upgrades/v3/bin
-# this will return v4.0.0
+mkdir -p <NODE_HOME>/cosmovisor/upgrades/v3/bin
+wget <URLRELEASETODO> && chmod +x kid
+sha256sum kid # Should be TODOCHECKSUM
+cp kid <NODE_HOME>/cosmovisor/upgrades/v3/bin
+# this should return Testnet-3.0.0-beta.1
 <NODE_HOME>/cosmovisor/upgrades/v3/bin/kid version
 ```
 
-When the halt height is reached, Cosmovisor will automatically restart the chain with the new binary.
+When the upgrade height is reached, Cosmovisor will automatically restart using the new binary.
 
 ### Without Cosmovisor
 To upgrade your node using without using Cosmovisor,  you need to follow these steps:
-1. Wait the chain halt. When its is reached, the node will stop. If the process is not killed by it self, kill it with the `kill` command.
+1. Wait the chain halt. When its is reached, the node will stop. If the `kid` process is not killed by it self, kill it with the `kill` command.
 2. Download the provided client or build it as shown earlier.
 3. Start the node with the new client : `kid start --home <NODE_HOME>`
 

@@ -28,14 +28,28 @@ kid version --long
 To upgrade your node using Cosmovisor you need to follow these steps:
 
 ```bash
-mkdir -p <NODE_HOME>/cosmovisor/upgrades/v3/bin
+# Check that your $DAEMON_HOME is correctly set
+echo $DAEMON_HOME
+
+# Download new binary (amd64 version, please adapt if you use an arm arch)
 wget https://github.com/KiFoundation/ki-tools/releases/download/3.0.0-beta/kid-testnet-3.0.0-beta-linux-amd64
-mv kid-testnet-3.0.0-beta-linux-amd64 kid && chmod +x kid
-sha256sum kid # 3ec617c3050a1c9d27f8a8a4d171308fe94b6a89d55d6ab28b48dfb3a1a87871
-cp kid <NODE_HOME>/cosmovisor/upgrades/v3/bin
+mv kid-testnet-3.0.0-beta-linux-amd64 kid
+chmod +x kid
+
+# check shasum - should be 3ec617c3050a1c9d27f8a8a4d171308fe94b6a89d55d6ab28b48dfb3a1a87871
+sha256sum ./kid
+
+# check version - should be Testnet-3.0.0-beta (commit 2a87d4df01e7da5f6c4e59f38148affd49fb35c3)
+./kid version --long
+
+# make a directory if you haven't already
+mkdir -p $DAEMON_HOME/cosmovisor/upgrades/v3/bin
+
+# copy this new binary
+cp kid $DAEMON_HOME/cosmovisor/upgrades/v3/bin/
 
 # this should return Testnet-3.0.0-beta
-<NODE_HOME>/cosmovisor/upgrades/v3/bin/kid version
+$DAEMON_HOME/cosmovisor/upgrades/v3/bin/kid version
 ```
 
 When the upgrade height is reached, Cosmovisor will automatically restart using the new binary.

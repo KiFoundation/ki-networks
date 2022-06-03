@@ -2,7 +2,7 @@
     <img width=150px src="https://wallet-testnet.blockchain.ki/static/img/icons/ki-chain.png" />
 </p>
 
-# kichain-t-4 V3 Upgrade
+# kichain-2 V3 Upgrade
 
 The V3 upgrade `kichain-2` is set to happen at height `10155750` which at current block time should be reached on `15th of June 2022` around `13H00 UTC`.
 

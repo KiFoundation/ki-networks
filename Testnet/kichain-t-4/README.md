@@ -7,8 +7,8 @@
 This guide will provide instructions to join the the current KiChain testnet with Chain ID `kichain-t-4`.
 
 ## Veteran mode
-1. Go vesion `1.16`
-1. Ki-tools: https://github.com/KiFoundation/ki-tools.git tag `2.0.0-testnet`
+1. Go vesion `1.18`
+1. Ki-tools: https://github.com/KiFoundation/ki-tools.git tag `3.0.0-beta`
 1. Genesis: [`genesis.json`](https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json)
 1. Persistent peers: [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/peers.txt)
 1. Min gas price: `0.025utki`
@@ -18,8 +18,8 @@ This guide will provide instructions to join the the current KiChain testnet wit
 The current version of `ki-tools` requires Go `1.16`. To install it, download and unzip the archive file as follows:
 
 ```bash
-wget https://dl.google.com/go/go1.16.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.16.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.18.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
 ```
 
 Then export the Go paths:
@@ -47,8 +47,9 @@ Fetch and install the current Testnet `ki-tools` version.
 ```bash
 git clone https://github.com/KiFoundation/ki-tools.git
 cd ki-tools
-git checkout -b v2.0.0-testnet tags/2.0.0-testnet
-make install
+git checkout -b v3.0.0-beta tags/3.0.0-beta
+make build-testnet
+cp build/kid $HOME/go/bin/
 ```
 
 Check `ki-tools` version
@@ -83,36 +84,39 @@ cd $NODE_ROOT
 
 Initiate the needed configuration files using the `unsafe-reset-all` command:
 ```bash
-kid unsafe-reset-all --home ./kid
+kid tendermint unsafe-reset-all
 ```
 
-Curl the genesis file to the `./kid/config/` folder:
+Curl the genesis file to the `~/.kid/config/` folder:
 ```bash
-curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4//genesis.json > ./kid/config/genesis.json
+curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json > ~/.kid/config/genesis.json
 ```
 
 The hash of the genesis file can be computed as follows:
 ```bash
-jq -S -c -M '' ./kid/config/genesis.json | shasum -a 256
+jq -S -c -M '' ~/.kid/config/genesis.json | shasum -a 256
 
 83e8d8b9b883f1d478fb8d9f0e32c138904d0cbc30e939fa0490f988fd0b78d7
 ```
 
-In the file `config.toml` that can be found in the `./kid/config/` directory, make sure to add the provided seed and the community peers found in [`seed.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4//seeds.txt) and [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4//peers.txt) by filling the `seeds` and `persistent_peers` fields resp.
+In the file `config.toml` that can be found in the `~/.kid/config/` directory, make sure to add the provided seed and the community peers found in [`seed.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4//seeds.txt) and [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4//peers.txt) by filling the `seeds` and `persistent_peers` fields resp.
 
-Make sure to set your `min-gas-price` to `0.025utki` in `app.toml`.
+Make sure to set your `minimum-gas-prices` to `0.025utki` in `app.toml`.
 
 Your node is now ready to be started. If you've started the node with a service you can simply start the service. Otherwise, use the following command:
 
 ```bash
-kid start --home ./kid/ &> ./kilogs/ki-node.log &
+kid start --home ~/.kid/ &> ~/.kilogs/ki-node.log &
 ```
 
 This command will start the block synchronization process where your node retrieves the current state of the blockchain from the other nodes. The process output is redirected to the `ki-node.log` log file. It can be visualized as follows:
 
 ```bash
-tail -f kilogs/ki-node.log
+tail -f ~/.kilogs/ki-node.log
 ```
+
+In case of error, you might need to sync the data. To do so, either ask for a fellow validator's data+wasm folders, or build the v2, sync the blockchain with it (until the upgrade block), then shutdown the v2 and start the v3 in place.
+
 
 ### Create your validator
 
@@ -121,7 +125,7 @@ tail -f kilogs/ki-node.log
 Create the validator wallet. Do not forget to save the mnemonic.
 
 ```bash
-kid keys add <WALLET_NAME> --home ./kid/
+kid keys add <WALLET_NAME> --home ~/.kid/
 ```
 
 Fund the wallet by asking for test token `TKIs` in the dedicated discord [channel](https://discord.gg/Baqd4ZZrhG).
@@ -135,13 +139,18 @@ kid tx staking create-validator \
   --commission-rate=0.1 \
   --min-self-delegation=1 \
   --amount=1000000utki \
-  --pubkey `kid tendermint show-validator --home ./kid/` \
+  --pubkey `kid tendermint show-validator --home ~/.kid/` \
   --moniker=<YOUR_MONIKER> \
   --chain-id=kichain-t-4 \
   --gas-prices="0.025utki" \
   --from=<WALLET_NAME> \
-  --home ./kid/  
+  --home ~/.kid/  
 ```
+
+The <YOUR_MONIKER> is the name you want to give to your validator.  
+/!\ It's _not_ the same as the `moniker` parameter in the `config.toml` configuration file. Even if they have the same name, they do not represent the same thing.
+
+### OPTIONAL: make your validator identifiable on Keybase
 
 To make your validator more identifiable and to attach additional information to it (e.g., a website), you can use an editing transaction as follow :
 
@@ -153,7 +162,11 @@ kid tx staking edit-validator  \
   --chain-id=kichain-t-4 \
   --from=<WALLET_NAME> \
   --gas-prices=0.025utki \
-  --home ./kid/
+  --home ~/.kid/
 ```
 
 This will refer to an existing [Keybase](https://keybase.io) account and use its associated information (e.g. avatar image) as meta data for you validator.
+
+### Validate your new validator
+
+Go to [the list of the kichain testnet validators](https://kichain-t-4.blockchain.ki/validators) and when you see your validator with the <YOUR_MONIKER> name in the list, you are all good.

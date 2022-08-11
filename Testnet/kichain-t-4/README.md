@@ -84,7 +84,7 @@ cd $NODE_ROOT
 
 Initiate the needed configuration files using the `unsafe-reset-all` command:
 ```bash
-kid tendermint unsafe-reset-all
+kid tendermint unsafe-reset-all --home ~/.kid
 ```
 
 Curl the genesis file to the `~/.kid/config/` folder:
@@ -103,6 +103,10 @@ In the file `config.toml` that can be found in the `~/.kid/config/` directory, m
 
 Make sure to set your `minimum-gas-prices` to `0.025utki` in `app.toml`.
 
+To get started, you might need to sync the data. To do so, you can ask a fellow validator for a snapshot containing data+wasm folders. 
+You can also sync from the chain start. For this you will need to build and run kid `2.0.0-testnet` version, up until the block `4351400`, and then switch to the `3.0.0-beta` version. 
+More information on the v3 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/UPGRADE_V3.md) 
+
 Your node is now ready to be started. If you've started the node with a service you can simply start the service. Otherwise, use the following command:
 
 ```bash
@@ -114,8 +118,6 @@ This command will start the block synchronization process where your node retrie
 ```bash
 tail -f ~/.kilogs/ki-node.log
 ```
-
-In case of error, you might need to sync the data. To do so, either ask for a fellow validator's data+wasm folders, or build the v2, sync the blockchain with it (until the upgrade block), then shutdown the v2 and start the v3 in place.
 
 
 ### Create your validator
@@ -143,8 +145,7 @@ kid tx staking create-validator \
   --moniker=<YOUR_MONIKER> \
   --chain-id=kichain-t-4 \
   --gas-prices="0.025utki" \
-  --from=<WALLET_NAME> \
-  --home ~/.kid/  
+  --from=<WALLET_NAME>
 ```
 
 The <YOUR_MONIKER> is the name you want to give to your validator.  
@@ -161,8 +162,7 @@ kid tx staking edit-validator  \
   --details="<YOUR_DESCRIPTION>"\  
   --chain-id=kichain-t-4 \
   --from=<WALLET_NAME> \
-  --gas-prices=0.025utki \
-  --home ~/.kid/
+  --gas-prices=0.025utki
 ```
 
 This will refer to an existing [Keybase](https://keybase.io) account and use its associated information (e.g. avatar image) as meta data for you validator.

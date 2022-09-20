@@ -36,7 +36,7 @@ wget https://github.com/KiFoundation/ki-tools/releases/download/4.0.0-beta/kid-t
 mv kid-testnet-4.0.0-beta-linux-amd64 kid
 chmod +x kid
 
-# check shasum - should be 348610616b5925a19c998621e946817c37d4fa3b7f856273dca5b7795915f5fe
+# check shasum - should be 172164f58005b362dfac754a1251bf61b6274160ffc5ea13da6525407645e2f3
 sha256sum ./kid
 
 # check version - should be Testnet-4.0.0-beta (commit 9627c0de235a505bd85fc6daaaa2c049d3920a31)

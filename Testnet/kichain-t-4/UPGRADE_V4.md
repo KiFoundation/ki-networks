@@ -19,7 +19,7 @@ kid version --long
 # name: kitools
 # server_name: kid
 # version: Testnet-4.0.0-beta
-# commit: 9627c0de235a505bd85fc6daaaa2c049d3920a31
+# commit: b0ea200bd7a3f4a85a65d20694d07d0905a9638a
 # build_tags: netgo ledger muslc,
 # go: go version go1.18 linux/amd64
 ```
@@ -39,7 +39,7 @@ chmod +x kid
 # check shasum - should be 172164f58005b362dfac754a1251bf61b6274160ffc5ea13da6525407645e2f3
 sha256sum ./kid
 
-# check version - should be Testnet-4.0.0-beta (commit 9627c0de235a505bd85fc6daaaa2c049d3920a31)
+# check version - should be Testnet-4.0.0-beta (commit b0ea200bd7a3f4a85a65d20694d07d0905a9638a)
 ./kid version --long
 
 # make a directory if you haven't already

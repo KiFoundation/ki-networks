@@ -18,7 +18,7 @@ kid version --long
 
 # name: kitools
 # server_name: kid
-# version: Testnet-4.0.0-alpha.1
+# version: Testnet-4.0.0-beta
 # commit: 9627c0de235a505bd85fc6daaaa2c049d3920a31
 # build_tags: netgo ledger muslc,
 # go: go version go1.18 linux/amd64
@@ -48,7 +48,7 @@ mkdir -p $DAEMON_HOME/cosmovisor/upgrades/v4/bin
 # copy this new binary
 cp kid $DAEMON_HOME/cosmovisor/upgrades/v4/bin/
 
-# this should return Testnet-3.0.0-beta
+# this should return Testnet-4.0.0-beta
 $DAEMON_HOME/cosmovisor/upgrades/v4/bin/kid version
 ```
 

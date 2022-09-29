@@ -39,7 +39,7 @@ chmod +x kid
 # check shasum - should be 39b2e9436d73972f307ccb55f0da2c4d1cbdffae19674b99244c7175db24ae1b
 sha256sum ./kid
 
-# check version - should be Mainent-4.0.0 (commit b004902f91807096a3d3700edd862bfb711aee54)
+# check version - should be Mainnet-4.0.0 (commit b004902f91807096a3d3700edd862bfb711aee54)
 ./kid version --long
 
 # make a directory if you haven't already

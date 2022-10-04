@@ -7,15 +7,54 @@
 This guide will provide instructions to join the the current KiChain testnet with Chain ID `kichain-t-4`.
 
 ## Veteran mode
+
 1. Go vesion `1.18`
-1. Ki-tools: https://github.com/KiFoundation/ki-tools.git tag `3.0.0-beta`
+1. Ki-tools: <https://github.com/KiFoundation/ki-tools.git> tag `4.0.0-beta`
 1. Genesis: [`genesis.json`](https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json)
 1. Persistent peers: [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/peers.txt)
 1. Min gas price: `0.025utki`
 
 ## Detailed steps
-### Install GO
-The current version of `ki-tools` requires Go `1.16`. To install it, download and unzip the archive file as follows:
+
+### Use provided binary
+
+Use the [provided](https://github.com/KiFoundation/ki-tools/releases/tag/4.0.0-beta) builds or build the new client yourself. A full how-to guide can be found in this [dedicated tutorial](https://github.com/KiFoundation/ki-tools#readme).
+
+We provide static binary releases with verifiable checksums. We encourage validators to build these binaries themselves using our dedicated tutorial and check the resulting checksum.
+
+```bash
+# Download new binary (amd64 version, please adapt if you use an arm arch)
+
+wget <https://github.com/KiFoundation/ki-tools/releases/download/4.0.0-beta/kid-testnet-4.0.0-beta-linux-amd64>
+mv kid-testnet-4.0.0-beta-linux-amd64 kid
+chmod +x kid
+```
+
+The client version should be:
+
+```bash
+./kid version --long
+
+# name: kitools
+# server_name: kid
+# version: Testnet-4.0.0-beta
+# commit: b0ea200bd7a3f4a85a65d20694d07d0905a9638a
+# build_tags: netgo ledger muslc,
+# go: go version go1.18 linux/amd64
+```
+
+The binary checksum should be:
+
+```bash
+# check shasum - should be 172164f58005b362dfac754a1251bf61b6274160ffc5ea13da6525407645e2f3
+sha256sum ./kid
+```
+
+### Compile from source
+
+#### Install GO
+
+The current version of `ki-tools` requires Go `1.18`. To install it, download and unzip the archive file as follows:
 
 ```bash
 wget https://dl.google.com/go/go1.18.linux-amd64.tar.gz
@@ -23,6 +62,7 @@ sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
 ```
 
 Then export the Go paths:
+
 ```bash
 mkdir -p $HOME/go/bin
 PATH=$PATH:/usr/local/go/bin
@@ -35,19 +75,21 @@ To test the Go installation, use the version command to check the downloaded ver
 ```bash
 go version
 ```
+
 which should output
 
 ```bash
-go version go1.16 linux/amd64
+go version go1.18 linux/amd64
 ```
 
-### Install Ki-tools
+#### Install Ki-tools
+
 Fetch and install the current Testnet `ki-tools` version.
 
 ```bash
 git clone https://github.com/KiFoundation/ki-tools.git
 cd ki-tools
-git checkout -b v3.0.0-beta tags/3.0.0-beta
+git checkout 4.0.0-beta
 make build-testnet
 cp build/kid $HOME/go/bin/
 ```
@@ -63,36 +105,30 @@ This should output
 ```bash
 name: kitools
 server_name: kid
-version: HEAD-59cae5f6c094fffb4bb483f7adbcd9838ceab852-Testnet-IBC
-commit: 59cae5f6c094fffb4bb483f7adbcd9838ceab852
-build_tags: netgo,ledger
-go: go version go1.16 darwin/amd64
+version: Testnet-4.0.0-beta
+commit: b0ea200bd7a3f4a85a65d20694d07d0905a9638a
+build_tags: netgo ledger
+go: go version go1.18 linux/amd64
 ...
 
 ```
 
-### Set up your node directory and start your relay
-
-Create your node directory as follows:
-```bash
-export NODE_ROOT= <location of your choice>
-mkdir -p $NODE_ROOT/kid $NODE_ROOT/kilogs
-cd $NODE_ROOT
-```
-
-**Note:** The step above can be skipped. In this case the node will be created in the default location `/home/<user>/.kid/`
+### Set up your node directory and start your node
 
 Initiate the needed configuration files using the `unsafe-reset-all` command:
+
 ```bash
 kid tendermint unsafe-reset-all --home ~/.kid
 ```
 
 Curl the genesis file to the `~/.kid/config/` folder:
+
 ```bash
 curl https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json > ~/.kid/config/genesis.json
 ```
 
 The hash of the genesis file can be computed as follows:
+
 ```bash
 jq -S -c -M '' ~/.kid/config/genesis.json | shasum -a 256
 
@@ -103,9 +139,14 @@ In the file `config.toml` that can be found in the `~/.kid/config/` directory, m
 
 Make sure to set your `minimum-gas-prices` to `0.025utki` in `app.toml`.
 
-To get started, you might need to sync the data. To do so, you can ask a fellow validator for a snapshot containing data+wasm folders. 
-You can also sync from the chain start. For this you will need to build and run kid `2.0.0-testnet` version, up until the block `4351400`, and then switch to the `3.0.0-beta` version. 
-More information on the v3 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/UPGRADE_V3.md) 
+To get started, you might need to sync the data. To do so, you can ask a fellow validator for a snapshot containing data+wasm folders.
+You can also sync from the chain start. For this you will need to:
+
+- build and run kid `2.0.0-testnet` version, up until the block `4351400`, and then switch to the `3.0.0-beta` version.
+- buidl and run kid `3.0.0-beta` version, up until the block `6108800`, and then switch to the `4.0.0-beta` version.
+
+More information on the v3 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/UPGRADE_V3.md)
+More information on the v4 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/UPGRADE_V4.md)
 
 Your node is now ready to be started. If you've started the node with a service you can simply start the service. Otherwise, use the following command:
 
@@ -118,7 +159,6 @@ This command will start the block synchronization process where your node retrie
 ```bash
 tail -f ~/.kilogs/ki-node.log
 ```
-
 
 ### Create your validator
 

@@ -55,7 +55,7 @@ $DAEMON_HOME/cosmovisor/upgrades/v4/bin/kid version
 sudo systemctl start cosmovisor
 
 # check you are running the new binary - should return Mainnet-4.1.0
-curl http://127.0.0.1:26657/abci_info | jq .result.response.version
+curl -s http://127.0.0.1:26657/abci_info | jq .result.response.version
 ```
 
 ### Without Cosmovisor
@@ -63,7 +63,7 @@ To upgrade your node without using Cosmovisor,  you need to follow these steps:
 1. Download the provided client or build it as shown earlier.
 2. Check that `kid version` returns "Mainnet-4.1.0"
 3. Restart your validator
-4. Check you are running the new binary: `curl http://127.0.0.1:26657/abci_info | jq .result.response.version`
+4. Check you are running the new binary: `curl -s http://127.0.0.1:26657/abci_info | jq .result.response.version`
 
 
 ## Security

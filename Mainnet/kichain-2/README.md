@@ -9,17 +9,18 @@ This guide will provide instructions to join the the current KiChain mainnet wit
 ## Veteran mode
 
 1. Go vesion `1.18`
-2. Ki-tools: <https://github.com/KiFoundation/ki-tools.git> tag `3.0.0`
+2. Ki-tools: <https://github.com/KiFoundation/ki-tools.git> - Current version `4.1.0`
 3. Genesis: [`genesis.json`](https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Mainnet/kichain-2/genesis.json)
-2. Seeds: [`seed.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/seeds.txt)
-3. Persistent peers: [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/peers.txt)
-4. Min gas price: `0.025uxki`
+4. Upgrades since genesis: [v3](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/UPGRADE_V3.md) (kid v3.0.0), [v4](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/UPGRADE_V4.md) (kid 4.1.0)
+5. Seeds: [`seed.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/seeds.txt)
+6. Persistent peers: [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/peers.txt)
+7. Min gas price: `0.025uxki`
 
 ## Detailed steps
 
 ### Install kid binary
 
-Use the [provided](https://github.com/KiFoundation/ki-tools/releases/tag/3.0.0) builds or build the new client yourself. A full how-to guide can be found in this [dedicated tutorial](https://github.com/KiFoundation/ki-tools#readme).
+Use the [provided](https://github.com/KiFoundation/ki-tools/releases/tag/4.1.0) builds or build the new client yourself. A full how-to guide can be found in this [dedicated tutorial](https://github.com/KiFoundation/ki-tools#readme).
 
 We provide static binary releases with verifiable checksums. We encourage validators and node operators to build these binaries themselves using our dedicated tutorial and check the resulting checksum.
 
@@ -30,10 +31,10 @@ kid version --long
 
 # name: kitools
 # server_name: kid
-# version: Mainnet-3.0.0
-# commit: dac9a74443d5cdc9d9a87214e03d77d3e2f7883d
+# version: Mainnet-4.1.0
+# commit: b5732b570d1de928e1a37a05c6b171e3ca06d6e6
 # build_tags: netgo ledger muslc,
-# go: go version go1.17.10 linux/amd64
+# go: go version go1.18 linux/amd64
 ```
 
 ### Initialize your node
@@ -63,8 +64,10 @@ In the file `config.toml` that can be found in the `~/.kid/config/` directory, m
 Make sure to set your `min-gas-price` to `0.025uxki` in `app.toml`.
 
 To get started, you might need to sync the data. To do so, you can use a data snapshot.
-You can also sync from the chain start. For this you will need to build and run kid `2.0.1` version, up until the block `10155750`, and then switch to the `3.0.0` version.
-More information on the v3 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/UPGRADE_V3.md)
+You can also sync from the chain start. For this you will need to build and run kid `2.0.1` version, and run the different upgrades as follows:
+- [v3](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/UPGRADE_V3.md) at block height `10155750`.
+- [v4](https://github.com/KiFoundation/ki-networks/blob/v0.1/Mainnet/kichain-2/UPGRADE_V4.md) at block height `11830000`.
+
 
 Your node is now ready to be started. If you've started the node with a service you can simply start the service. Otherwise, use the following command:
 

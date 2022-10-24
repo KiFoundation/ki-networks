@@ -24,6 +24,22 @@ kid version --long
 # go: go version go1.18 linux/amd64
 ```
 
+ℹ️ **Update** ℹ️
+
+The release v4.0.0 has been patched to fix a [security issue](https://forum.cosmos.network/t/ibc-security-advisory-dragonberry/7702) on the 15th of October 2022. You can now run this upgrade with [v4.1.0](https://github.com/KiFoundation/ki-tools/releases/tag/4.1.0) directly.
+
+```bash
+kid version --long
+
+# name: kitools
+# server_name: kid
+# version: Mainnet-4.1.0
+# commit: b5732b570d1de928e1a37a05c6b171e3ca06d6e6
+# build_tags: netgo ledger muslc,
+# go: go version go1.18 linux/amd64
+```
+
+
 ### With Cosmovisor
 To upgrade your node using Cosmovisor you need to follow these steps:
 

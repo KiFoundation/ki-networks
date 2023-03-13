@@ -4,13 +4,15 @@
 
 # kichain-t-4 V5 Upgrade
 
-The V5 upgrade `kichain-t-4` is set to happen at height `xxxxxx` which at current block time should be reached on `16th of March 2023` around `13H00 UTC`.
+The V5 upgrade `kichain-t-4` is set to happen at height `8785795` which at current block time should be reached on `16th of March 2023` around `13H00 UTC`.
 
 ## How to upgrade your node
 
 Use the [provided](https://github.com/KiFoundation/ki-tools/releases/tag/5.0.0-beta) builds or build the new client yourself. A full how-to guide can be found in this [dedicated tutorial](https://github.com/KiFoundation/ki-tools#readme).
 
 We provide static binary releases with verifiable checksums. We encourage validators to build these binaries themselves using our dedicated tutorial and check the resulting checksum.
+
+Note: this version requires `go 1.19+`
 
 The client version should be:
 ```bash
@@ -21,7 +23,7 @@ kid version --long
 # version: Testnet-5.0.0-beta
 # commit: xxx
 # build_tags: netgo ledger muslc,
-# go: go version go1.18 linux/amd64
+# go: go version go1.19 linux/amd64
 ```
 
 ### With Cosmovisor

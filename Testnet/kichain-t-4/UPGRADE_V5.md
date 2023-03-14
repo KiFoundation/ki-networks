@@ -34,7 +34,7 @@ To upgrade your node using Cosmovisor you need to follow these steps:
 echo $DAEMON_HOME
 
 # Download new binary (amd64 version, please adapt if you use an arm arch)
-wget https://github.com/KiFoundation/ki-tools/releases/download/5.0.0-beta/kid-testnet-4.0.0-beta-linux-amd64
+wget https://github.com/KiFoundation/ki-tools/releases/download/5.0.0-beta/kid-testnet-5.0.0-beta-linux-amd64
 mv kid-testnet-5.0.0-beta-linux-amd64 kid
 chmod +x kid
 

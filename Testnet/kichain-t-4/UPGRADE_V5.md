@@ -21,9 +21,9 @@ kid version --long
 # name: kitools
 # server_name: kid
 # version: Testnet-5.0.0-beta
-# commit: xxx
+# commit: 7d1b4892ee59a091a40131394898fa00a68533d8
 # build_tags: netgo ledger muslc,
-# go: go version go1.19 linux/amd64
+# go: go version go1.19.7 linux/amd64
 ```
 
 ### With Cosmovisor
@@ -38,10 +38,10 @@ wget https://github.com/KiFoundation/ki-tools/releases/download/5.0.0-beta/kid-t
 mv kid-testnet-5.0.0-beta-linux-amd64 kid
 chmod +x kid
 
-# check shasum - should be xxxx
+# check shasum - should be 0d70159ca658042854bc36f298dfc3fdfabbdda2d29c53e0f205c56036b631cf
 sha256sum ./kid
 
-# check version - should be Testnet-5.0.0-beta (commit xxx)
+# check version - should be Testnet-5.0.0-beta (commit 7d1b4892ee59a091a40131394898fa00a68533d8)
 ./kid version --long
 
 # make a directory if you haven't already

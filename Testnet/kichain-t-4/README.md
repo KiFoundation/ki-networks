@@ -12,7 +12,7 @@ This guide will provide instructions to join the the current KiChain testnet wit
 1. Ki-tools: <https://github.com/KiFoundation/ki-tools.git> tag `5.0.0-beta`
 1. Genesis: [`genesis.json`](https://raw.githubusercontent.com/KiFoundation/ki-networks/v0.1/Testnet/kichain-t-4/genesis.json)
 1. Persistent peers: [`peers.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/peers.txt)
-1. Persistent peers: [`seeds.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/seeds.txt)
+1. Seeds: [`seeds.txt`](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/seeds.txt)
 1. Min gas price: `0.025utki`
 
 ## Detailed steps

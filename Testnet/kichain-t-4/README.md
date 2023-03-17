@@ -146,7 +146,7 @@ You can also sync from the chain start. For this you will need to:
 
 - build and run kid `2.0.0-testnet` version, up until the block `4351400`, and then switch to the `3.0.0-beta` version.
 - buidl and run kid `3.0.0-beta` version, up until the block `6108800`, and then switch to the `4.0.0-beta` version.
-- buidl and run kid `3.0.0-beta` version, up until the block `8785795`, and then switch to the `5.0.0-beta` version.
+- buidl and run kid `4.0.0-beta` version, up until the block `8785795`, and then switch to the `5.0.0-beta` version.
 
 More information on the v3 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/UPGRADE_V3.md)
 More information on the v4 upgrade [here](https://github.com/KiFoundation/ki-networks/blob/v0.1/Testnet/kichain-t-4/UPGRADE_V4.md)

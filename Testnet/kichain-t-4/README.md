@@ -108,7 +108,7 @@ name: kitools
 server_name: kid
 version: Testnet-5.0.0-beta
 commit: 7d1b4892ee59a091a40131394898fa00a68533d8
-build_tags: netgo ledger muslc,
+build_tags: netgo ledger,
 go: go version go1.19.7 linux/amd64
 ...
 

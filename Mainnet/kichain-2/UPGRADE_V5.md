@@ -1,7 +1,3 @@
-<p align="right">
-    <img width=150px src="https://wallet-testnet.blockchain.ki/static/img/icons/ki-chain.png" />
-</p>
-
 # kichain-2 V5 Upgrade
 
 The V5 upgrade `kichain-2` is set to happen at height `14340215` which at current block time should be reached on `23rd of March 2023` around `13H00 UTC`.
